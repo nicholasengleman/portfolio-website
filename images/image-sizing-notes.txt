@@ -1,0 +1,10 @@
+macbook resolution ratio: 1.6
+macbook background height: 810px
+iphone 6: height: 600px
+set height of final image to 450px
+
+
+ftp.bernadetteengleman.com
+nicholas@bernadetteengleman.com
+11july2016
+/

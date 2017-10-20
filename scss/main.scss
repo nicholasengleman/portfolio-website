@@ -8,6 +8,9 @@ html {
 		margin: 90px 0;
 		color: #93a4aa;
 	}
+	button:focus {
+		outline: none;
+	}
 }
 
 body {
@@ -191,9 +194,6 @@ header {
 		background-color: green;
 		width: 70vw
 	}
-	button:focus {
-		outline: none;
-	}
 	.seeMore {
 		text-align: center;
 		margin: 38vh auto 1vh;
@@ -221,13 +221,13 @@ header {
 
 @media (max-width: 960px) and (min-aspect-ratio: 1/1) {
 	header {
-		background-image: url(../images/header/header-HD.jpg);
+		background-image: url(../images/intro-images/header-HD-min.jpg);
 	}
 }
 
 @media (min-width: 961px) and (min-aspect-ratio: 1/1) {
 	header {
-		background-image: url(../images/header/header-4K.jpg);
+		background-image: url(../images/intro-images/header-4K-min.jpg);
 	}
 }
 
@@ -411,7 +411,7 @@ header {
 			width: 15vw;
 		}
 		button:hover {
-			width: 17vw;
+			width: 16vw;
 		}
 	}
 }
@@ -425,7 +425,7 @@ header {
 			width: 8vw;
 		}
 		button:hover {
-			width: 10vw;
+			width: 9vw;
 		}
 	}
 }
@@ -453,5 +453,8 @@ footer {
 	text-align: center;
 	padding: 20px 0;
 	border-top: 1px solid white;
+	a {
+		color: black;
+	}
 }
 
