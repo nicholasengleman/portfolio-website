@@ -1,10 +1,9 @@
-macbook resolution ratio: 1.6
-macbook background height: 810px
-iphone 6: height: 600px
-set height of final image to 450px
+1) get any resolution, as long as the ratio is 1.6x
+2) in paint.net, resize so that the height is 810.
+3) get iphone 6 screenshot
+4) resize height to 800px
+5) resize entire iphone image down to 600px
+6) set height of master image to 1000px
+7) make copy with heihgt of 600px for website
 
 
-ftp.bernadetteengleman.com
-nicholas@bernadetteengleman.com
-11july2016
-/
