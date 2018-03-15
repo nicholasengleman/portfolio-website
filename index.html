@@ -2,359 +2,371 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Nicholas Engleman | Front End Web Developer</title>
+	<title>Nicholas Engleman | React Front End Web Developer</title>
 
-	<script src="https://use.fontawesome.com/744cab0980.js"></script>
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="css/homepage.css">
 
 </head>
 
-
 <body data-spy="scroll" data-target="#cat">
 
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
 
-	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+	<div class="collapse navbar-collapse" id="cat">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="mailto:engleman@outlook.com">- <i class="fa fa-envelope-o"
+																			aria-hidden="true"></i> Email -<span
+						class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://www.linkedin.com/in/nicholas-engleman/">- <i class="fa fa-linkedin"
+																							   aria-hidden="true"></i>
+					Linkedin -</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://github.com/nicholasengleman">- <i class="fa fa-github"
+																					aria-hidden="true"></i> Github -</a>
+			</li>
+		</ul>
+		<ul class="navbar-nav justify-content-end">
+			<li class="nav-item">
+				<a class="nav-link" href="#about">- about - </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#skills">- skills - </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#apps">- apps -</a>
+			</li>
+		</ul>
+	</div>
+</nav>
 
-		<div class="collapse navbar-collapse" id="cat">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="mailto:engleman@outlook.com">- <i class="fa fa-envelope-o" aria-hidden="true"></i> Email -<span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="https://www.linkedin.com/in/nicholas-engleman/    ">- <i class="fa fa-linkedin" aria-hidden="true"></i> Linkedin -</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="https://github.com/nicholasengleman">- <i class="fa fa-github" aria-hidden="true"></i> Github -</a>
-				</li>
-			</ul>
-			<ul class="navbar-nav justify-content-end">
-				<li class="nav-item">
-					<a class="nav-link" href="#about">- about - </a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#skills">- skills - </a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#apps">- apps -</a>
-				</li>
-			</ul>
+<header class="panel">
+	<div class="greeting">
+		<p>Hi, I am Nicholas. </p>
+		<p>I design and build web applications.</p>
+	</div>
+	<a href="mailto:nicholas@englemaninvest.com">
+		<button>Yes, I'm available for hire</button>
+	</a>
+	<a href="#about">
+		<div class="seeMore">
+			<p>learn more about what I do</p>
+			<i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
 		</div>
-	</nav>
+	</a>
+</header>
 
-	<header class="panel">
-		<div class="greeting">
-			<h1>Hi, I am Nicholas. I design and build web applications.</h1>
+<div class="container-fluid panel about" id="about">
+	<div class="container text-center">
+
+		<div class="row my-4">
+			<div class="col">
+				<h1>About</h1>
+			</div>
 		</div>
-		<a href="mailto:engleman@outlook.com"><button>Yes, I'm available for hire</button></a>
-		<a href="#about">
-			<div class="seeMore">
-				<p>learn more about what I do</p>
-				<i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
-			</div>
-		</a>
-	</header>
 
-	<div class="container-fluid panel about" id="about">
-		<div class="container text-center">
-
-			<div class="row my-4">
-				<div class="col">
-					<h2 class="my-3">About</h2>
-				</div>
-			</div>
-
-			<div class="row justify-content-center">
-				<div class="col-11 col-md-9 story">
-					<div class="row p-4 align-items-center justify-content-center">
-						<div class="col-4"><img src="./images/about-images/programmer.svg"></div>
-						<div class="col-8 text-left">
-							<p>I started studying web developement one year ago, after five years in the Navy as a logistics specialist and then getting a BA in political science.</p>
-						</div>
+		<div class="row justify-content-center">
+			<div class="col-9 story">
+				<div class="row align-items-center justify-content-center">
+					<div class="col-6 col-sm-5 order-sm-2">
+						<img data-src="./images/about-images/programmer.svg" alt="">
+					</div>
+					<div class="col-10 col-sm-6 text-left pb-2 order-sm-1">
+						<p>I started studying web development one year ago, after five years in the Navy as a logistics
+							specialist and then getting a BA in political science.</p>
 					</div>
 				</div>
 			</div>
+		</div>
 
 
-			<div class="row margin justify-content-center">
-				<div class="col-10 col-md-8 story">
-					<div class="p-4 row align-items-center justify-content-center">
-						<div class="col-8 text-right">
-							<p>To me, web developement is awesome because on the internet, there is no limit to what you can build.</p>
-						</div>
-						<div class="col-4"><img src="./images/about-images/bright-idea.svg"></div>
+		<div class="row justify-content-center my-5">
+			<div class="col-9 story">
+				<div class="row align-items-center justify-content-center">
+					<div class="col-6 col-sm-5">
+						<img data-src="./images/about-images/bright-idea.svg" alt="">
 					</div>
+					<div class="col-10 col-sm-6 text-left p-3 p-lg-5">
+						<p>I enjoy web development because of its creative potential. </p>
+						<br/>
+						<p>Below are the languages, frameworks and tools that I've used while creating my projects.</p>
+					</div>
+
 				</div>
 			</div>
+		</div>
 
-			<div class="row justify-content-center margin">
-				<div class="col-10 col-md-8 story">
-					<div class="p-4 row align-items-center justify-content-center">
-						<div class="col-4"><img src="./images/about-images/tools.svg"></div>
-						<div class="col-8">
-							<p class="text-left">Below are the languages, libraries, frameworks and tools that I've enjoyed using while creating my projects.</p>
-						</div>
-					</div>
-				</div>
+	</div>
+</div>
+
+
+<div class="container-fluid panel skills" id="skills">
+	<div class="container text-center">
+		<div class="my-4 row">
+			<div class="col">
+				<h1 class="my-3">Code</h1>
 			</div>
-
+		</div>
+		<div class="row justify-content-center mb-lg-2">
+			<picture class="col-6 col-md-3 col-lg-2 align-self-center">
+				<img data-src="./images/skills-images/html-icon.png" alt="HTML5 icon">
+				<p>HTML5</p>
+			</picture>
+			<picture class="col-6 col-md-3 col-lg-2 align-self-center">
+				<img data-src="./images/skills-images/css-icon.png" alt="css icon">
+				<p>CCS3</p>
+			</picture>
+			<picture class="col-6 col-md-3 col-lg-2 align-self-center">
+				<img data-src="./images/skills-images/javascript-icon.png" alt="javacript icon">
+				<p>Javascript</p>
+			</picture>
+			<picture class="col-6 col-md-3 col-lg-2 align-self-center">
+				<img data-src="./images/skills-images/jquery.png" alt="jquery icon">
+				<p>jQuery</p>
+			</picture>
+		</div>
+		<div class="row justify-content-center mb-5 mb-lg-2">
+			<picture class="col-6 col-md-3 col-lg-2 align-self-center">
+				<img data-src="./images/skills-images/es6.png" alt="es6 icon">
+				<p>ES6</p>
+			</picture>
+			<picture class="col-6 col-md-3 col-lg-2 align-self-center">
+				<img data-src="./images/skills-images/bootstrap.png" alt="bootstrap 4 icon">
+				<p>Bootstrap 4</p>
+			</picture>
+			<picture class="col-6 col-md-3 col-lg-2 align-self-center">
+				<img data-src="./images/skills-images/react.png" alt="react icon">
+				<p>React</p>
+			</picture>
+			<picture class="col-6 col-md-3 col-lg-2 align-self-center">
+				<img data-src="./images/skills-images/redux.png" alt="redux icon">
+				<p>Redux</p>
+			</picture>
 		</div>
 	</div>
-
-	<div class="container-fluid panel skills" id="skills">
-		<div class="container text-center">
-			<div class="my-4 row">
-				<div class="col">
-					<h2 class="my-3">Code</h2>
-				</div>
-			</div>
-			<div class="row justify-content-center mb-lg-2">
-				<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-					<img src="./images/skills-images/html-icon.png">
-					<p>HTML5</p>
-				</picture>
-				<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-					<img src="./images/skills-images/css-icon.png">
-					<p>CCS3</p>
-				</picture>
-				<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-					<img src="./images/skills-images/javascript-icon.png">
-					<p>Javascript</p>
-				</picture>
-				<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-					<img src="./images/skills-images/jquery.png">
-					<p>jQuery</p>
-				</picture>
-			</div>
-			<div class="row justify-content-center mb-5 mb-lg-2">
-				<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-					<img src="./images/skills-images/es6.png">
-					<p>ES6</p>
-				</picture>
-				<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-					<img src="./images/skills-images/bootstrap.png">
-					<p>Bootstrap 4</p>
-				</picture>
-				<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-					<img src="./images/skills-images/react.png">
-					<p>React</p>
-				</picture>
-				<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-					<img src="./images/skills-images/redux.png">
-					<p>Redux</p>
-				</picture>
+	<div class="container text-center mb-5">
+		<div class="my-4 row">
+			<div class="col">
+				<h1 class="my-3">Tools</h1>
 			</div>
 		</div>
-		<div class="container text-center mt-5">
-			<div class="row">
-				<div class="col">
-					<h2>Tools</h2>
-				</div>
-			</div>
-			<div class="row justify-content-center mb-2">
-				<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-					<img src="./images/skills-images/git.png">
-					<p>Git</p>
-				</picture>
-				<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-					<img src="./images/skills-images/sass.png">
-					<p>Sass</p>
-				</picture>
-				<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-					<img src="./images/skills-images/prepos.png">
-					<p>Prepros</p>
-				</picture>
-				<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-					<img src="./images/skills-images/vscode.png">
-					<p>VS Code</p>
-				</picture>
-			</div>
-			<div class="row justify-content-center mb-5 mb-lg-2">
-				<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-					<img src="./images/skills-images/webstorm.svg">
-					<p>Webstorm</p>
-				</picture>
-				<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-					<img src="./images/skills-images/webpack.png">
-					<p>Webpack</p>
-				</picture>
-				<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-					<img src="./images/skills-images/yarn.png">
-					<p>Yarn</p>
-				</picture>
-				<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-					<img src="./images/skills-images/babel.png">
-					<p>Babel</p>
-				</picture>
-			</div>
+		<div class="row justify-content-center mb-2">
+			<picture class="col-6 col-md-3 col-lg-2 align-self-center">
+				<img data-src="./images/skills-images/git.png" alt="git icon">
+				<p>Git</p>
+			</picture>
+			<picture class="col-6 col-md-3 col-lg-2 align-self-center">
+				<img data-src="./images/skills-images/sass.png" alt="sass icon">
+				<p>Sass</p>
+			</picture>
+			<picture class="col-6 col-md-3 col-lg-2 align-self-center">
+				<img data-src="./images/skills-images/prepos.png" alt="prepros icon">
+				<p>Prepros</p>
+			</picture>
+			<picture class="col-6 col-md-3 col-lg-2 align-self-center">
+				<img data-src="./images/skills-images/vscode.png" alt="vs code icon">
+				<p>VS Code</p>
+			</picture>
+		</div>
+		<div class="row justify-content-center">
+			<picture class="col-6 col-md-3 col-lg-2 align-self-center">
+				<img data-src="./images/skills-images/webstorm.svg" alt="webstorm icon">
+				<p>Webstorm</p>
+			</picture>
+			<picture class="col-6 col-md-3 col-lg-2 align-self-center">
+				<img data-src="./images/skills-images/webpack.png" alt="webpack icon">
+				<p>Webpack</p>
+			</picture>
+			<picture class="col-6 col-md-3 col-lg-2 align-self-center">
+				<img data-src="./images/skills-images/yarn.png" alt="yarn icon">
+				<p>Yarn</p>
+			</picture>
+			<picture class="col-6 col-md-3 col-lg-2 align-self-center">
+				<img data-src="./images/skills-images/babel.png" alt="babel icon">
+				<p>Babel</p>
+			</picture>
 		</div>
 	</div>
+</div>
 
-		<div class="container-fluid panel projects" id="apps">
-			<div class="container">
-				<div class="row my-4 justify-content-center">
-					<div class="col-12">
-						<h2 class="my-3">Projects</h2>
-					</div>
-				</div>
-
-				<div class="row justify-content-center">
-					<div class="col-12 col-sm-6 col-md-5 order-sm-2">
-						<img src="./images/project-images/crypto-app-hd.png">
-					</div>
-
-					<div class="col-12 col-sm-6 col-md-5 text-center text-sm-left order-sm-1 mt-5 mt-sm-0 ">
-						<div class="row justify-content-center justify-content-sm-start">
-							<div class="col">
-								<h3 class="text-center text-sm-left mb-5 mb-sm-3">Cryptocurrency Filter React App</h3>
-								<span class="badge badge-success">react</span>
-								<span class="badge badge-primary">coinmarketcap api</span>
-								<span class="badge badge-primary">chasing-coins api</span>
-								<p class="my-5 my-sm-3">Filter and sort cryptocurrencies by several attributes,
-									returning only those where data is above x, below y or between x and y.
-									Combine several filters together to further refine your search. </p>
-								<div>
-									<a href="https://clever-bell-54b6ac.netlify.com/"><button>SEE APP</button></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<hr>
-
-				<div class="row justify-content-center">
-					<div class="col-12 col-sm-6 col-md-5 order-sm-1">
-						<img src="./images/project-images/calculator-app.png">
-					</div>
-					<div class="col-sm-1 order-sm-2"></div>
-
-					<div class="col-12 col-sm-6 col-md-5 text-center text-sm-left order-sm-3 mt-5 mt-sm-0 ">
-						<div class="row justify-content-center justify-content-sm-start">
-							<div class="col">
-								<h3 class="text-center text-sm-left mb-5 mb-sm-3">Advanced Scientific Calculator App</h3>
-								<span class="badge badge-success">javascript</span>
-								<p class="my-5 my-sm-3">Supports equations with nested parentheses. Keyboard number
-									entry and undo. Dynamic font sizing for long equations. History view shows last 6
-									inputs. </p>
-								<div>
-									<a href="calculator-app.html"><button>SEE APP</button></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<hr>
-
-				<div class="row justify-content-center">
-					<div class="col-12 col-sm-6 col-md-5 order-sm-2">
-						<img src="./images/project-images/todo-app.png">
-					</div>
-
-					<div class="col-12 col-sm-6 col-md-5 text-center text-sm-left order-sm-1 mt-5 mt-sm-0 ">
-						<div class="row justify-content-center justify-content-sm-start">
-							<div class="col">
-								<h3 class="text-center text-sm-left mb-5 mb-sm-3">Todo App with filtering</h3>
-								<span class="badge badge-success">javascript</span>
-								<p class="my-5 my-sm-3">Todos can be filtered by active or completed status.
-									Completed todos can be cleared. Individuals Todos can be edited. Data saved to
-									local storage.
-								</p>
-								<div>
-									<a href="todo-app.html"><button>SEE APP</button></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<hr>
-
-				<div class="row justify-content-center">
-					<div class="col-12 col-sm-6 col-md-5 order-sm-1">
-						<img src="./images/project-images/weather-app.png">
-					</div>
-					<div class="col-sm-1 order-sm-2"></div>
-
-					<div class="col-12 col-sm-6 col-md-5 text-center text-sm-left order-sm-3 mt-5 mt-sm-0 ">
-						<div class="row justify-content-center justify-content-sm-start">
-							<div class="col">
-								<h3 class="text-center text-sm-left mb-5 mb-sm-3">Weather App</h3>
-								<span class="badge badge-success">jquery</span>
-								<span class="badge badge-success">javascript</span>
-								<span class="badge badge-primary">geolocation api</span>
-								<span class="badge badge-primary">openweather map api</span>
-								<br />
-								<span class="badge badge-primary">googlemaps api</span>
-								<p class="my-5 my-sm-3">See current weather and weather forecast for next 4 days at your location. Input zip code to get weather at another location. Hover over each day's forecast to get weather breakdown for that day.</p>
-								<div>
-									<a href="weather-app.html"><button>SEE APP</button></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<hr>
-
-				<div class="row justify-content-center">
-					<div class="col-12 col-sm-6 col-md-5 order-sm-2">
-						<img src="./images/project-images/wikipedia-app.png">
-					</div>
-
-					<div class="col-12 col-sm-6 col-md-5 text-center text-sm-left order-sm-1 mt-5 mt-sm-0 ">
-						<div class="row justify-content-center justify-content-sm-start">
-							<div class="col">
-								<h3 class="text-center text-sm-left mb-5 mb-sm-3">Wikipedia Article Finder App</h3>
-								<span class="badge badge-success">jquery</span>
-								<span class="badge badge-primary">wikipedia api</span>
-								<p class="my-5 my-sm-3">Searches Wikipedia via keyword using the wikipedia api. Use the slider to choose how many articles to return.</p>
-								<div>
-									<a href="wikipedia-viewer-app.html"><button>SEE APP</button></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<hr>
-
-				<div class="row justify-content-center">
-					<div class="col-12 col-sm-6 col-md-5 order-sm-1">
-						<img src="./images/project-images/got-app.png">
-					</div>
-					<div class="col-sm-1 order-sm-2"></div>
-
-					<div class="col-12 col-sm-6 col-md-5 text-center text-sm-left order-sm-3 mt-5 mt-sm-0 ">
-						<div class="row justify-content-center justify-content-sm-start">
-							<div class="col">
-								<h3 class="text-center text-sm-left mb-5 mb-sm-3">Top 10 Game of Thrones Quotes App</h3>
-								<span class="badge badge-success">jquery</span>
-								<p class="my-5 my-sm-3">Displays different quotes and changes background color as user clicks through.</p>
-								<div>
-									<a href="got-quotes-app.html"><button>SEE APP</button></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
+<div class="container-fluid panel projects" id="apps">
+	<div class="container">
+		<div class="row my-4 justify-content-center">
+			<div class="col-12">
+				<h1 class="my-3">Projects</h1>
 			</div>
 		</div>
 
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-5 order-md-2">
+				<img data-src="./images/project-images/crypto-app-4k.png" alt="screenshot of app running">
+			</div>
+
+			<div class="col-12 col-md-5 text-center text-md-left order-md-1 mr-md-5">
+				<div class="row justify-content-center justify-content-md-start">
+					<div class="col">
+						<h2 class="text-center text-md-left my-3">Cryptocurrency React App</h2>
+						<span class="badge badge-success">react</span>
+						<span class="badge badge-primary">coinmarketcap api</span>
+						<span class="badge badge-primary">chasing-coins api</span>
+						<p class="mt-3">On the homepage, filter and sort cryptocurrencies by several attributes,
+							returning only those where data is above x, below y or between x and y.
+							Combine several filters together to further refine your search. </p>
+						<p>On each crypto's page, see a descrption of the crypto with link for more
+							info, a TradingView.com chart and a list of up to the next five events. </p>
+						<a href="cryptofilter-app.html">
+							<button>SEE APP</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-5 order-md-1">
+				<img data-src="./images/project-images/calculator-app-4k.png" alt="screenshot of app running">
+			</div>
+
+			<div class="col-12 col-md-5 text-center text-md-left order-md-2 ml-md-5">
+				<div class="row justify-content-center justify-content-md-start">
+					<div class="col">
+						<h2 class="text-center text-md-left my-3">Advanced Scientific Calculator App</h2>
+						<span class="badge badge-success">javascript</span>
+						<p class="mt-3">Supports complex equations with nested parentheses. Keyboard number
+							entry and undo. Dynamic font sizing for long equations. History view shows last 6
+							inputs. </p>
+						<a href="calculator-app.html">
+							<button>SEE APP</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-5 order-md-2">
+				<img data-src="./images/project-images/todo-app-4k.png" alt="screenshot of app running">
+			</div>
+
+			<div class="col-12 col-md-5 text-center text-md-left order-md-1 mr-md-5">
+				<div class="row justify-content-center justify-content-md-start">
+					<div class="col">
+						<h2 class="text-center text-md-left my-3">Todo App with filtering</h2>
+						<span class="badge badge-success">javascript</span>
+						<p class="mt-3">Todos can be filtered by active or completed status.
+							Completed todos can be cleared. Individuals Todos can be edited. Data saved to
+							local storage.
+						</p>
+						<a href="todo-app.html">
+							<button>SEE APP</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-5 order-md-1">
+				<img data-src="./images/project-images/weather-app-4k.png" alt="screenshot of app running">
+			</div>
+
+			<div class="col-12 col-md-5 text-center text-md-left order-md-2 ml-md-5">
+				<div class="row justify-content-center justify-content-md-start">
+					<div class="col">
+						<h2 class="text-center text-md-left my-3">Weather App</h2>
+						<span class="badge badge-success">jquery</span>
+						<span class="badge badge-success">javascript</span>
+						<span class="badge badge-primary">geolocation api</span>
+						<span class="badge badge-primary">openweather map api</span>
+						<br/>
+						<span class="badge badge-primary">googlemaps api</span>
+						<p class="mt-3">See current weather and weather forecast for next 4 days at your
+							location. Input zip code to get weather at another location. Hover over each day's forecast
+							to get weather breakdown for that day.</p>
+
+						<a href="weather-app.html">
+							<button>SEE APP</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-5 order-md-2">
+				<img data-src="./images/project-images/wikipedia-app-4k.png" alt="screenshot of app running">
+			</div>
+
+			<div class="col-12 col-md-5 text-center text-md-left order-md-1 mr-md-5">
+				<div class="row justify-content-center justify-content-md-start">
+					<div class="col">
+						<h2 class="text-center text-md-left my-3">Wikipedia Article Finder App</h2>
+						<span class="badge badge-success">jquery</span>
+						<span class="badge badge-primary">wikipedia api</span>
+						<p class="mt-3">Searches Wikipedia via keyword using the wikipedia api. Use the slider
+							to choose how many articles to return.</p>
+						<a href="wikipedia-viewer-app.html">
+							<button>SEE APP</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-5 order-md-1">
+				<img data-src="./images/project-images/got-app-4k.png" alt="screenshot of app running">
+			</div>
+
+			<div class="col-12 col-md-5 text-center text-md-left order-md-2 ml-md-5">
+				<div class="row justify-content-center justify-content-md-start">
+					<div class="col">
+						<h2 class="text-center text-md-left my-3">Top 10 Game of Thrones Quotes App</h2>
+						<span class="badge badge-success">jquery</span>
+						<p class="mt-3">Displays different quotes and changes background color as user clicks
+							through.</p>
+						<a href="got-quotes-app.html">
+							<button>SEE APP</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
 
 
-	<footer>
-		<div><a href='http://www.freepik.com/free-vector/professional-programmer-engineer-writing-code_1311615.htm'>Icons designed by Freepik</a></div>
-	</footer>
+<footer>
+	<div><a href='http://www.freepik.com/free-vector/professional-programmer-engineer-writing-code_1311615.htm'>Icons
+		designed by Freepik</a></div>
+</footer>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-	<script src="js/smoothscroll.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/10.4.2/lazyload.min.js"></script>
+<script> var myLazyLoad = new LazyLoad(); </script>
+<script src="js/smoothscroll.js"></script>
+<script src="https://use.fontawesome.com/744cab0980.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
