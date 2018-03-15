@@ -52,13 +52,17 @@ p, .badge {
   padding: 0 50px;
   opacity: 0.8; }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navbar {
     padding: 0;
-    font-size: 4rem; }
-  .collapse {
-    font-size: 4rem;
-    height: 50px; } }
+    opacity: 0.9; }
+  #navbarSupportedContent {
+    background: black; }
+  #navbarSupportedContent li {
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold; } }
 
 header {
   background-color: #343a40;
