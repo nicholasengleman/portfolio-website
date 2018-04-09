@@ -42,8 +42,12 @@ h2 {
 	  font-size: 1.5rem;
 }
 
-p, .badge {
-	  font-size: .8rem;
+p, li, .badge, button {
+	  font-size: 1rem;
+}
+
+button.minorprojects {
+	  font-size: 0.8rem;
 }
 
 .badge {
@@ -61,8 +65,11 @@ p, .badge {
 	  h2 {
 			font-size: 2rem;
 	  }
-	  p, .badge {
+	  p, li, .badge, button {
 			font-size: 1.25rem;
+	  }
+	  button.minorprojects {
+			font-size: 1.1rem;
 	  }
 }
 
@@ -327,17 +334,13 @@ header {
 	  h4 {
 			letter-spacing: -1px;
 	  }
-	  li {
-			font-size: 1.2rem;
-	  }
 	  img {
 			max-width: 100%;
 	  }
 	  button {
 			background: #eee;
 			border: 2px solid green;
-			border-radius: 10vw;
-			font-size: 1.5rem;
+			border-radius: 10px;
 			font-weight: bold;
 			height: 40px;
 			margin-top: 3vh;
@@ -351,6 +354,15 @@ header {
 			width: 170px;
 			border: 2px solid black;
 	  }
+	  button.minorprojects {
+			width: 125px;
+			height: 30px;
+			margin: 5px 20px 10px 0;
+	  }
+	  button.minorprojects:hover {
+			width:130px;
+	  }
+
 }
 
 ////////////////////////////////////////
