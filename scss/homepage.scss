@@ -27,23 +27,31 @@ hr {
 button:focus {
 	  outline: none;
 }
+h1 {
+	  font-size: 2rem;
+	  margin-bottom: 3vh;
+}
 
 h1, h2 {
 	  font-weight: 900;
 	  text-align: center;
 }
 
-h1 {
-	  font-size: 2rem;
-	  margin-bottom: 3vh;
-}
-
-h2 {
+h2, h3 {
 	  font-size: 1.5rem;
 }
 
 p, li, .badge, button {
 	  font-size: 1rem;
+}
+
+.technical-Features {
+	  h3 {
+			font-size: 1rem;
+	  }
+	  li {
+			font-size: 0.7rem;
+	  }
 }
 
 button.minorprojects {
@@ -62,7 +70,7 @@ button.minorprojects {
 	  h1 {
 			font-size: 3rem;
 	  }
-	  h2 {
+	  h2, h3 {
 			font-size: 2rem;
 	  }
 	  p, li, .badge, button {
@@ -70,6 +78,14 @@ button.minorprojects {
 	  }
 	  button.minorprojects {
 			font-size: 1.1rem;
+	  }
+	  .technical-Features {
+			h3 {
+				  font-size: 1.4rem;
+			}
+			li {
+				  font-size: 1.1rem;
+			}
 	  }
 }
 
@@ -328,14 +344,17 @@ header {
 .projects {
 	  background: $background-color;
 	  padding-bottom: 90px;
-	  h3 {
-			font-size: 1.5rem;
-	  }
+
 	  h4 {
 			letter-spacing: -1px;
 	  }
 	  img {
 			max-width: 100%;
+	  }
+	  li {
+			margin-bottom: 5px;
+			border-top: 1px solid lightgrey;
+			line-height: 1.3rem;
 	  }
 	  button {
 			background: #eee;
@@ -363,6 +382,13 @@ header {
 			width:130px;
 	  }
 
+}
+
+@media (min-width: 1440px) {
+	  .projects li {
+			margin-bottom: 10px;
+			line-height: 1.5rem;
+	  }
 }
 
 ////////////////////////////////////////
