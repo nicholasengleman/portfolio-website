@@ -5,7 +5,7 @@ $(document).ready(function() {
 	// Remove links that don't actually link to anything
 		.not('[href="#"]')
 		.not('[href="#0"]')
-		.click(function (event) {
+		.click(function(event) {
 			// On-page links
 			if (
 				location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
@@ -19,23 +19,22 @@ $(document).ready(function() {
 				if (target.length) {
 					// Only prevent default if animation is actually gonna happen
 					event.preventDefault();
-					$('html, body').animate({
-						scrollTop: target.offset().top
-					}, 1000, function () {
+					$('html, body').animate({ scrollTop: target.offset().top}, 1000, function() {
 						// Callback after animation
 						// Must change focus!
-						var $target = $(target);e
+						var $target = $(target);
 						$target.focus();
 						if ($target.is(":focus")) { // Checking if the target was focused
 							return false;
 						} else {
-							$target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+							$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
 							$target.focus(); // Set focus again
-						}
+						};
 					});
 				}
 			}
 		});
 });
+
 
 

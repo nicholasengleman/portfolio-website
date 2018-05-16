@@ -39,9 +39,6 @@ p, li, .badge, button {
 .technical-Features li {
   font-size: 0.7rem; }
 
-button.minorprojects {
-  font-size: 0.8rem; }
-
 .badge {
   margin-bottom: 3px; }
 
@@ -63,9 +60,12 @@ button.minorprojects {
     font-size: 1.1rem; } }
 
 .navbar {
-  padding: 0 50px;
+  padding: 0 25px;
   opacity: 0.8;
   font-size: 1.25rem; }
+
+.navbar li {
+  margin-right: 20px; }
 
 @media (max-width: 767px) {
   .navbar {
@@ -225,14 +225,16 @@ header {
 .skills {
   background: white; }
   .skills img {
-    width: 20%;
-    margin-bottom: 1vh; }
+    margin-bottom: 1vh;
+    width: 30%; }
   .skills picture {
     margin-bottom: 2vh; }
 
 @media (min-width: 768px) {
   .skills img {
-    width: 30%; } }
+    width: 30%; }
+  .skills img larger {
+    width: 50%; } }
 
 .projects {
   background: #99ffff;
@@ -242,37 +244,23 @@ header {
   .projects img {
     max-width: 100%; }
   .projects li {
-    margin-bottom: 5px;
-    border-top: 1px solid lightgrey;
-    line-height: 1.3rem; }
+    padding-left: 20px; }
   .projects button {
-    background: #eee;
     border: 2px solid green;
-    border-radius: 10px;
+    border-radius: 30px;
     font-weight: bold;
     height: 40px;
     margin-top: 3vh;
     width: 160px;
-    -webkit-transition: width 1s;
-    -o-transition: width 1s;
-    transition: width 1s;
     cursor: pointer; }
   .projects button:hover {
-    background: #000;
-    color: green;
-    width: 170px;
-    border: 2px solid black; }
-  .projects button.minorprojects {
-    width: 125px;
-    height: 30px;
-    margin: 5px 20px 10px 0; }
-  .projects button.minorprojects:hover {
-    width: 130px; }
+    background-color: green;
+    color: black; }
 
 @media (min-width: 1440px) {
   .projects li {
     margin-bottom: 10px;
-    line-height: 1.5rem; } }
+    line-height: 1.8rem; } }
 
 footer {
   background: #343a40;

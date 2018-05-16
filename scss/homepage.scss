@@ -54,9 +54,6 @@ p, li, .badge, button {
 	  }
 }
 
-button.minorprojects {
-	  font-size: 0.8rem;
-}
 
 .badge {
 	  margin-bottom: 3px;
@@ -92,9 +89,13 @@ button.minorprojects {
 //////////////////////////////////////////////////////
 //********************navbar
 .navbar {
-	  padding: 0 50px;
+	  padding: 0 25px;
 	  opacity: 0.8;
 	  font-size: 1.25rem;
+}
+
+.navbar li {
+	  margin-right: 20px;
 }
 
 @media (max-width: 767px) {
@@ -324,17 +325,21 @@ header {
 .skills {
 	  background: white;
 	  img {
-			width: 20%;
 			margin-bottom: 1vh;
+			width: 30%;
 	  }
 	  picture {
 			margin-bottom: 2vh;
 	  }
+
 }
 
 @media (min-width: 768px) {
 	  .skills img {
 			width: 30%;
+	  }
+	  .skills img larger {
+			width: 50%;
 	  }
 }
 
@@ -352,42 +357,27 @@ header {
 			max-width: 100%;
 	  }
 	  li {
-			margin-bottom: 5px;
-			border-top: 1px solid lightgrey;
-			line-height: 1.3rem;
+			padding-left: 20px;
 	  }
 	  button {
-			background: #eee;
 			border: 2px solid green;
-			border-radius: 10px;
+			border-radius: 30px;
 			font-weight: bold;
 			height: 40px;
 			margin-top: 3vh;
 			width: 160px;
-			transition: width 1s;
 			cursor: pointer;
 	  }
 	  button:hover {
-			background: #000;
-			color: green;
-			width: 170px;
-			border: 2px solid black;
+			background-color: green;
+			color: black;
 	  }
-	  button.minorprojects {
-			width: 125px;
-			height: 30px;
-			margin: 5px 20px 10px 0;
-	  }
-	  button.minorprojects:hover {
-			width:130px;
-	  }
-
 }
 
 @media (min-width: 1440px) {
 	  .projects li {
 			margin-bottom: 10px;
-			line-height: 1.5rem;
+			line-height: 1.8rem;
 	  }
 }
 
