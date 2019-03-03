@@ -1,13 +1,9 @@
-1) get 1600x1000 resolution screenshot
-2) in paint.net, resize so that the width is 1300px
-3) paste to laptop picture
-4) get iphone 6 resolution screenshot
-5) resize to 270 x 480
-6) paste to phone picture
-7) paste to laptop picture
-8) save as 8-bit png
-
-
-
+1) set resolution to 2000 x 1250px in chrome
+2) in paint.net, resize so that the height is 810.
+3) get iphone 6 screenshot
+4) resize height to 800px
+5) resize entire iphone image down to 600px
+6) set height of master image to 1000px
+7) make copy with heihgt of 600px for website
 
 

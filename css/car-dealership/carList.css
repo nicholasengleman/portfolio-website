@@ -1,0 +1,512 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+  font-family: "montserrat", sans-serif;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+header a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #B6B6B8;
+}
+
+header a:hover {
+  color: white;
+}
+
+header .navRow1Container {
+  background-color: #2E2D2D;
+  width: 100%;
+}
+
+header .navRow1Container .navRow1 {
+  width: 70%;
+  margin: 0 auto;
+  color: white;
+}
+
+header .navRow1Container .navRow1 i {
+  color: yellow;
+}
+
+header .navRow1Container .navRow1 ul.navHeader {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+header .navRow1Container .navRow1 ul.navHeader li {
+  margin-right: 20px;
+  padding: 8px;
+}
+
+header .navRow1Container .navRow1 ul.navHeader li:last-of-type {
+  width: 300px;
+  background-color: #1073BA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+header .navRow1Container .navRow1 ul.navHeader li:last-of-type i {
+  color: yellow;
+  font-size: 20px;
+}
+
+header .navRow1Container .navRow1 ul.navHeader li:hover {
+  cursor: pointer;
+}
+
+header .navRow1Container .navRow1 .dropdDownMenu {
+  width: 200px;
+  height: 400px;
+  position: absolute;
+  top: 50px;
+  background-color: black;
+  color: white;
+}
+
+header .navRow1Container .navRow1 .dropdDownMenu ul {
+  display: flex;
+  flex-direction: column;
+}
+
+header .navRow2Container {
+  background-color: white;
+  width: 100%;
+  border-bottom: 2px solid #B6B6B8;
+}
+
+header .navRow2Container .navRow2 {
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+  justify-content: space-between;
+  background-color: white;
+  color: #B6B6B8;
+}
+
+header .navRow2Container .navRow2 ul {
+  display: flex;
+}
+
+header .navRow2Container .navRow2 ul li {
+  margin-right: 15px;
+  height: 70px;
+  text-align: center;
+  padding: 0 10px;
+  padding-top: 28px;
+  font-weight: 600;
+}
+
+header .navRow2Container .navRow2 ul li:hover {
+  background-color: #2E2D2D;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  header .navRow1Container .navRow1 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  header .navRow1Container .navRow1 {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  header .navRow1Container .navRow1 ul.navHeader li:last-of-type {
+    width: 200px;
+  }
+  header .navRow2Container .navRow2 {
+    width: 100%;
+  }
+  header .navRow2Container .navRow2 ul li {
+    padding-top: 15px;
+  }
+}
+
+footer {
+  margin: 0 auto;
+  padding: 20px 0 0 100px;
+  width: 100%;
+  background: #2e2d2d;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+footer .footerContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+}
+
+footer .footerContainer .menuSections {
+  width: 23%;
+}
+
+footer .footerContainer .menuSections i {
+  font-size: 20px;
+}
+
+footer .footerContainer .menuSections ul {
+  width: 100%;
+}
+
+footer .footerContainer .menuSections ul li {
+  margin-bottom: 10px;
+  color: #b6b6b8;
+  font-weight: normal;
+  transition: color 0.2s;
+}
+
+footer .footerContainer .menuSections ul li:hover {
+  color: #FBE42F;
+  cursor: pointer;
+}
+
+footer .footerContainer .menuSections ul li:first-child {
+  font-size: 14px;
+  color: white;
+  cursor: default;
+}
+
+footer .menuSections:last-child li:last-child {
+  transition: color 0.2s;
+}
+
+footer .menuSections:last-child li:last-child:hover {
+  color: #b6b6b8;
+}
+
+footer .menuSections:last-child li:last-child:hover i:hover {
+  color: #FBE42F;
+}
+
+footer .menuFooter {
+  margin: 30px auto 0 auto;
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+footer .menuFooter button.menuContact {
+  width: 300px;
+  height: 40px;
+  background: #1073ba;
+  border: none;
+  color: white;
+  outline: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background 0.5s;
+  margin-right: 50px;
+}
+
+footer .menuFooter button.menuContact:hover {
+  background: #0f5791;
+  cursor: pointer;
+}
+
+footer .menuFooter .menuFooterText {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  border-top: 1px solid white;
+}
+
+footer .menuFooter .menuFooterText span:first-child {
+  display: flex;
+}
+
+footer .menuFooter .menuFooterText span:first-child p:nth-child(2) {
+  color: #1073ba;
+}
+
+footer .menuFooter .menuFooterText span:last-child {
+  color: #FBE42F;
+}
+
+@media (max-width: 1200px) {
+  footer .menuFooter {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  footer .footerContainer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  footer .menuFooter .menuFooterText {
+    flex-wrap: wrap;
+  }
+  footer .menuFooter .menuFooterText span {
+    width: 80%;
+  }
+  footer .menuFooter .menuFooterText span:first-of-type {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 700px) {
+  footer .footerContainer .menuSectionsContainer {
+    width: 45%;
+  }
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: "montserrat", sans-serif;
+}
+
+main {
+  width: 70%;
+  margin: 150px auto 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.searchBox {
+  width: 100%;
+  height: 100px;
+  font-size: 4rem;
+  border-bottom: 1px solid #c5c5c7;
+  letter-spacing: 2px;
+}
+
+.contentContainer {
+  width: 100%;
+}
+
+.car {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.car .carPicture {
+  width: 30%;
+  margin-right: 20px;
+}
+
+.car .carPicture img {
+  max-width: 100%;
+}
+
+.car .carPicture button {
+  background-color: #969698;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.car .carPicture button i {
+  color: white;
+}
+
+.car .carPicture button:hover {
+  cursor: pointer;
+  background-color: #6f6f71;
+}
+
+.car .carInfo {
+  width: 75%;
+}
+
+.car .carInfo .carTitle {
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.car .carInfo .carTitle h2 {
+  color: #969698;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.car .carInfo .carTitle h2 span {
+  color: #1073BA;
+}
+
+.car .carInfo .carTitle h1 {
+  color: #333333;
+  font-size: 2.5rem;
+}
+
+.car .carInfo .carDetailsPriceContainer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #969698;
+  padding-top: 10px;
+}
+
+.car .carInfo .carDetailsPriceContainer .carDetails {
+  line-height: 2rem;
+}
+
+.car .carInfo .carDetailsPriceContainer .carDetails .VIN {
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.car .carInfo .carDetailsPriceContainer .carDetails span {
+  color: #333333;
+}
+
+.car .carInfo .carDetailsPriceContainer .carMainPrice {
+  color: #333333;
+  line-height: 2rem;
+  width: 30%;
+  position: relative;
+}
+
+.car .carInfo .carDetailsPriceContainer .carMainPrice h3 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.car .carInfo .carDetailsPriceContainer .carMainPrice p {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.car .carInfo .carDetailsPriceContainer .carMainPrice button {
+  width: 100%;
+  height: 35px;
+  border: none;
+  outline: none;
+  background-color: #969698;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 0;
+  transition: background-color 0.2s;
+}
+
+.car .carInfo .carDetailsPriceContainer .carMainPrice button:hover {
+  cursor: pointer;
+  background-color: #6f6f71;
+}
+
+.car .carInfo .carDetailsPriceContainer .carPriceDetails {
+  line-height: 2rem;
+  width: 30%;
+  position: relative;
+  color: #333333;
+}
+
+.car .carInfo .carDetailsPriceContainer .carPriceDetails div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.car .carInfo .carDetailsPriceContainer .carPriceDetails button {
+  width: 100%;
+  height: 35px;
+  border: none;
+  outline: none;
+  background-color: #1073BA;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 0;
+  transition: background-color 0.2s;
+}
+
+.car .carInfo .carDetailsPriceContainer .carPriceDetails button:hover {
+  cursor: pointer;
+  background-color: #105f9e;
+}

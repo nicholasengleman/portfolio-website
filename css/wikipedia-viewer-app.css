@@ -1,0 +1,142 @@
+body {
+	background-color: #092B40;
+	font-size: 16px;
+}
+
+h1, h2, h3 {
+	margin: auto;
+	color: white;
+}
+
+h1 {
+	font-size: 1.4em;
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 1.3em;
+}
+
+h3 {
+	font-size: 0.8em;
+	margin-bottom: 20px;
+}
+
+form {
+	text-align: center;
+	border-radius: 20px;
+}
+
+
+cursor {
+	color: white;
+	background-color: white;
+}
+
+/*Search Box Instructions*/
+
+.searchbox {
+	width: 500px;
+	height: 244px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	text-align: center;
+}
+
+.searchbox a {
+	text-decoration: none;
+	color: white;
+}
+
+
+/*Slider*/
+.slider {
+	display: flex;
+	justify-content: space-evenly;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.sliderForm input {
+	width: 100px;
+	color: red;
+}
+
+output {
+	color: orange;
+	font-weight: 600;
+	font-size: 1.5em;
+}
+
+
+/*Input*/
+.searchTerm input {
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 0.9em;
+	margin: 30px auto;
+	width: 250px;
+	height: 40px;
+	border-radius: 20px;
+	border: 5px solid #996100;
+	background-color: #092B40;
+	padding-left: 20px;
+	outline: none;
+
+}
+
+
+/*results*/
+
+.contentBox {
+	width: 70%;
+	background-color: #E6E6E7;
+	border-left: 5px solid #092B40;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+
+.contentBox:hover {
+	border-left: 5px solid orange;
+}
+
+.contentBox a  {
+	text-decoration: none;
+}
+
+.title {
+	padding: 10px 20px 5px;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1.5em;
+	font-weight: 600;
+	color: black;
+}
+
+.snippet {
+	color: black;
+	font-size: 1em;
+	padding: 10px 20px 10px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+@media (max-width: 700px) {
+	.searchbox {
+		width: 80%;
+	}
+	.contentBox {
+		width: 90%;
+	}
+}
+
+
+
+
+
+
+
+
+

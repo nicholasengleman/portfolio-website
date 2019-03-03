@@ -1,610 +1,1067 @@
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>John Engleman | React Front End Web Developer</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>John Engleman | Front End Web Developer</title>
 
-
-	<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<link rel="stylesheet" href="css/homepage.css">
-
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon"/>
+    <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+            href="https://fonts.googleapis.com/css?family=Montserrat"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/homepage.css"/>
 </head>
 
 <body data-spy="scroll" data-target="#cat">
+<nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
+    <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-auto">
-			<li class="nav-item"><a class="nav-link" href=""><i class="fa fa-phone" aria-hidden="true"></i>
-				404-510-1356</a></li>
-			<li class="nav-item">
-				<a class="nav-link" href="mailto:nicholas@englemaninvest.com"><i class="fa fa-envelope-o"
-																				 aria-hidden="true"></i>
-					nicholas@englemaninvest.com</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="https://www.linkedin.com/in/nicholas-engleman/"><i class="fa fa-linkedin"
-																							 aria-hidden="true"></i>
-					Linkedin </a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="https://github.com/nicholasengleman"><i class="fa fa-github"
-																				  aria-hidden="true"></i> Github</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="/J-Nicholas-Engleman-Resume.pdf"><i class="fa fa-book"
-																			  aria-hidden="true"></i> Resume</a>
-			</li>
-		</ul>
-		<ul class="navbar-nav justify-content-end">
-			<li class="nav-item">
-				<a class="nav-link" href="#about">about</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#skills">skills</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#apps">apps</a>
-			</li>
-		</ul>
-	</div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href=""
+                ><i class="fa fa-phone" aria-hidden="true"></i> 404-510-1356</a
+                >
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mailto:nicholas@englemaninvest.com"
+                ><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    nicholas@englemaninvest.com</a
+                >
+            </li>
+            <li class="nav-item">
+                <a
+                        class="nav-link"
+                        href="https://www.linkedin.com/in/nicholas-engleman/"
+                ><i class="fa fa-linkedin" aria-hidden="true"></i> Linkedin
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/nicholasengleman"
+                ><i class="fa fa-github" aria-hidden="true"></i> Github</a
+                >
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/John-N-Engleman-Resume.pdf"
+                ><i class="fa fa-book" aria-hidden="true"></i> Resume</a
+                >
+            </li>
+        </ul>
+        <ul class="navbar-nav justify-content-end" id="cat">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">about</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#wordpress-apps">wordpress</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#skills">skills</a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" href="#react-apps">react</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#javascript-apps">javascript/jquery</a>
+            </li>
+        </ul>
+    </div>
 </nav>
 
 <header class="panel">
-	<div class="greeting">
-		<p>Hi, I'm John, a self-taught Atlanta-based web developer.</p>
-	</div>
-	<a href="mailto:nicholas@englemaninvest.com">
-		<button>Yes, I'm available for hire</button>
-	</a>
-	<a href="#about">
-		<div class="seeMore">
-			<p>learn more about what I do</p>
-			<i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
-		</div>
-	</a>
+    <div class="greeting">
+        <p>Hi I'm John, an Atlanta-based</p>
+        <p>front-end web developer.</p>
+    </div>
+    <a href="mailto:nicholas@englemaninvest.com">
+        <button>Yes, I'm available for hire</button>
+    </a>
+    <a href="#about">
+        <div class="seeMore">
+            <p>learn more about what I do</p>
+            <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
+        </div>
+    </a>
 </header>
 
 <div class="container-fluid panel about" id="about">
-	<div class="container text-center">
+    <div class="container text-center">
+        <div class="row my-4">
+            <div class="col">
+                <h1>About</h1>
+            </div>
+        </div>
 
-		<div class="row my-4">
-			<div class="col">
-				<h1>About</h1>
-			</div>
-		</div>
+        <div class="row justify-content-center">
+            <div class="col-9 story">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-6 col-sm-5 order-sm-2">
+                        <img src="./images/about-images/programmer.svg" alt=""/>
+                    </div>
+                    <div class="col-10 col-sm-6 text-left pb-2 order-sm-1">
+                        <p>
+                            I've spent the last 9 months working for a small web
+                            development company in Atlanta. </p>
+                        <p>The majority of my time
+                            was spent creating and maintaining custom wordpress
+                            themes, two of which are currently used in production here at
+                            <a href="https://truewx.com/" target="_blank">Truewx</a>, a weather data company and <a
+                                    href="https://www.sedata.com/" target="_blank">Sedata</a>, one of the largest
+                            providers of utility
+                            software in the south-east.
+                            I recently finished a <a href="http://demo-act.nicholasengleman.com/" target="_blank">third
+                                theme for ACT Club</a> and it will soon be applied to ACT Club and its 7 sister
+                            international sites.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-		<div class="row justify-content-center">
-			<div class="col-9 story">
-				<div class="row align-items-center justify-content-center">
-					<div class="col-6 col-sm-5 order-sm-2">
-						<img data-src="./images/about-images/programmer.svg" alt="">
-					</div>
-					<div class="col-10 col-sm-6 text-left pb-2 order-sm-1">
-						<p>I started studying web development about one year ago, after five years in the Navy as a
-							logistics
-							specialist and then getting a BA in political science.</p>
-					</div>
-				</div>
-			</div>
-		</div>
+        <div class="row justify-content-center my-5">
+            <div class="col-9 story">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-6 col-sm-5">
+                        <img src="./images/about-images/bright-idea.svg" alt=""/>
+                    </div>
+                    <div class="col-10 col-sm-6 text-left p-3 p-lg-5">
+                        <p>
+                            Outside of work, I have built a few React/MongoDB projects. See them below.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- <div class="container-fluid panel skills">
+    <div class="container text-center">
+        <hr/>
+        <div class="my-4 row" id="skills">
+            <div class="col">
+                <h1 class="my-3">Code</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 offset-lg-2">
+                <div class="row mb-lg-2">
+                    <picture class="col-6 col-md-3 col-lg-2 align-self-center">
+                        <img src="./images/skills-images/html-icon.png" alt="HTML5 icon">
+                        <p>HTML5</p>
+                    </picture>
+                    <picture class="col-6 col-md-3 col-lg-2 align-self-center">
+                        <img src="./images/skills-images/css-icon.png" alt="css icon">
+                        <p>CCS3</p>
+                    </picture>
+                    <picture class="col-6 col-md-3 col-lg-2 align-self-center">
+                        <img src="./images/skills-images/sass.png" alt="sass icon">
+                        <p>Sass</p>
+                    </picture>
+                    <picture class="col-6 col-md-3 col-lg-2 align-self-center">
+                        <img src="./images/skills-images/javascript-icon.png" alt="javascript icon">
+                        <p>Javascript</p>
+                    </picture>
+                </div>
+                <div class="row mb-lg-2">
+                    <picture class="col-6 col-md-3 col-lg-2 align-self-center">
+                        <img src="./images/skills-images/es6.png" alt="javascript icon">
+                        <p>ES6</p>
+                    </picture>
+                    <picture class="col-6 col-md-3 col-lg-2 align-self-center">
+                        <img src="./images/skills-images/jquery.png" alt="jquery icon">
+                        <p>jQuery</p>
+                    </picture>
+                    <picture class="col-6 col-md-3 col-lg-2 align-self-center">
+                        <img src="./images/skills-images/bootstrap.png" alt="bootstrap 4 icon">
+                        <p>Bootstrap 4</p>
+                    </picture>
+                    <picture class="col-6 col-md-3 col-lg-2 align-self-center">
+                        <img src="./images/skills-images/react.png" alt="react icon">
+                        <p>React</p>
+                    </picture>
+                </div>
+                <div class="row mb-5 mb-lg-2">
+                    <picture class="col-6 col-md-3 col-lg-2 align-self-center">
+                        <img src="./images/skills-images/nodejs.png" alt="redux icon">
+                        <p>Node</p>
+                    </picture>
+                    <picture class="col-6 col-md-3 col-lg-2 align-self-center">
+                        <img src="./images/skills-images/express.png" class="larger" alt="redux icon">
+                        <p>Express</p>
+                    </picture>
+                    <picture class="col-6 col-md-3 col-lg-2 align-self-center">
+                        <img src="./images/skills-images/mongodb.png" class="larger" alt="redux icon">
+                        <p>MongoDB</p>
+                    </picture>
+                    <picture class="col-6 col-md-3 col-lg-2 align-self-center">
+                        <img src="./images/skills-images/mongoose.png" class="larger" alt="redux icon">
+                        <p>Mongoose</p>
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
 
-		<div class="row justify-content-center my-5">
-			<div class="col-9 story">
-				<div class="row align-items-center justify-content-center">
-					<div class="col-6 col-sm-5">
-						<img data-src="./images/about-images/bright-idea.svg" alt="">
-					</div>
-					<div class="col-10 col-sm-6 text-left p-3 p-lg-5">
-						<p>I enjoy web development because of its creative potential.</p>
-						<br/>
-						<p>Below are the languages, frameworks and tools that I've used while creating my projects.</p>
-					</div>
-				</div>
-			</div>
-		</div>
+        <div class="my-4 row">
+            <div class="col">
+                <h1 class="my-3">Tools</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 offset-lg-2">
+                <div class="row mb-2">
+                    <picture class="col-6 col-md-3 col-lg-2 align-self-center">
+                        <img src="./images/skills-images/git.png" alt="git icon">
+                        <p>Git</p>
+                    </picture>
+                    <picture class="col-6 col-md-3 col-lg-2 align-self-center">
+                        <img src="./images/skills-images/webpack.png" alt="webpack icon">
+                        <p>Webpack</p>
+                    </picture>
+                    <picture class="col-6 col-md-3 col-lg-2 align-self-center">
+                        <img src="./images/skills-images/babel.png" alt="webpack icon">
+                        <p>Babel</p>
+                    </picture>
+                    <picture class="col-6 col-md-3 col-lg-2 align-self-center">
+                        <img src="./images/skills-images/bem.png" alt="yarn icon">
+                        <p>BEM</p>
+                    </picture>
+                </div>
+                <div class="row">
+                    <picture class="col-6 col-md-3 col-lg-2 align-self-center">
+                        <img src="./images/skills-images/yarn.png" alt="yarn icon">
+                        <p>Yarn</p>
+                    </picture>
+                    <picture class="col-6 col-md-3 col-lg-2 align-self-center">
+                        <img src="./images/skills-images/npm.png" alt="yarn icon">
+                        <p>NPM</p>
+                    </picture>
+                    <picture class="col-6 col-md-3 col-lg-2 align-self-center">
+                        <img src="./images/skills-images/vscode.png" alt="vs code icon">
+                        <p>VS Code</p>
+                    </picture>
+                    <picture class="col-6 col-md-3 col-lg-2 align-self-center">
+                        <img src="./images/skills-images/webstorm.svg" alt="webstorm icon">
+                        <p>Webstorm</p>
+                    </picture>
+                </div>
+                <div class="row">
+                    <picture class="col-6 col-md-3 col-lg-2 align-self-center">
+                        <img src="./images/skills-images/prepos.png" alt="yarn icon">
+                        <p>Prepros</p>
+                    </picture>
+                    <picture class="col-6 col-md-3 col-lg-2 align-self-center">
+                        <img src="./images/skills-images/mlab.png" class="larger" alt="vs code icon">
+                        <p>mLab</p>
+                    </picture>
+                    <picture class="col-6 col-md-3 col-lg-2 align-self-center">
+                        <img src="./images/skills-images/postman.png" alt="webstorm icon">
+                        <p>Postman</p>
+                    </picture>
+                    <picture class="col-6 col-md-3 col-lg-2 align-self-center">
+                        <img src="./images/skills-images/prettier.png" alt="webstorm icon">
+                        <p>Prettier</p>
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div> -->
 
-	</div>
-</div>
+    <div class="container-fluid panel projects">
+        <div class="container">
+            <div class="row justify-content-center mb-5" id="wordpress-apps">
+                <div class="col-12">
+                    <h1>Wordpress Websites</h1>
+                </div>
+            </div>
 
+            <div class="row pt-3 d-flex justify-content-center">
+                <div class="img-width">
+                    <img
+                            src="./images/project-images/act-app.jpg"
+                            alt="screen shot of app running"
+                    />
+                </div>
+            </div>
 
-<div class="container-fluid panel skills" id="skills">
-	<div class="container text-center">
-		<div class="my-4 row">
-			<div class="col">
-				<h1 class="my-3">Code</h1>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-12 offset-lg-2">
-				<div class="row mb-lg-2">
-					<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-						<img data-src="./images/skills-images/html-icon.png" alt="HTML5 icon">
-						<p>HTML5</p>
-					</picture>
-					<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-						<img data-src="./images/skills-images/css-icon.png" alt="css icon">
-						<p>CCS3</p>
-					</picture>
-					<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-						<img data-src="./images/skills-images/javascript-icon.png" alt="javascript icon">
-						<p>Javascript</p>
-					</picture>
-					<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-						<img data-src="./images/skills-images/jquery.png" alt="jquery icon">
-						<p>jQuery</p>
-					</picture>
-				</div>
-				<div class="row mb-lg-2">
-					<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-						<img data-src="./images/skills-images/bootstrap.png" alt="bootstrap 4 icon">
-						<p>Bootstrap 4</p>
-					</picture>
-					<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-						<img data-src="./images/skills-images/react.png" alt="react icon">
-						<p>React</p>
-					</picture>
-					<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-						<img data-src="./images/skills-images/nodejs.png" alt="redux icon">
-						<p>Node</p>
-					</picture>
-					<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-						<img data-src="./images/skills-images/express.png" class="larger" alt="redux icon">
-						<p>Express</p>
-					</picture>
-				</div>
-				<div class="row mb-5 mb-lg-2">
-					<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-						<img data-src="./images/skills-images/mongodb.png" class="larger" alt="redux icon">
-						<p>MongoDB</p>
-					</picture>
-					<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-						<img data-src="./images/skills-images/mongoose.png" class="larger" alt="redux icon">
-						<p>Mongoose</p>
-					</picture>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container text-center mb-5">
-		<div class="my-4 row">
-			<div class="col">
-				<h1 class="my-3">Tools</h1>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-12 offset-lg-2">
-				<div class="row mb-2 ">
-					<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-						<img data-src="./images/skills-images/git.png" alt="git icon">
-						<p>Git</p>
-					</picture>
-					<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-						<img data-src="./images/skills-images/sass.png" alt="sass icon">
-						<p>Sass</p>
-					</picture>
-					<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-						<img data-src="./images/skills-images/webpack.png" alt="webpack icon">
-						<p>Webpack</p>
-					</picture>
-					<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-						<img data-src="./images/skills-images/babel.png" alt="webpack icon">
-						<p>Babel</p>
-					</picture>
-				</div>
-				<div class="row">
-					<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-						<img data-src="./images/skills-images/yarn.png" alt="yarn icon">
-						<p>Yarn</p>
-					</picture>
-					<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-						<img data-src="./images/skills-images/npm.png" alt="yarn icon">
-						<p>NPM</p>
-					</picture>
-					<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-						<img data-src="./images/skills-images/bem.png" alt="yarn icon">
-						<p>BEM</p>
-					</picture>
-					<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-						<img data-src="./images/skills-images/vscode.png" alt="vs code icon">
-						<p>VS Code</p>
-					</picture>
-				</div>
-				<div class="row">
-					<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-						<img data-src="./images/skills-images/webstorm.svg" alt="webstorm icon">
-						<p>Webstorm</p>
-					</picture>
-					<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-						<img data-src="./images/skills-images/prepos.png" alt="yarn icon">
-						<p>Prepros</p>
-					</picture>
-					<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-						<img data-src="./images/skills-images/mlab.png" class="larger" alt="vs code icon">
-						<p>mLab</p>
-					</picture>
-					<picture class="col-6 col-md-3 col-lg-2 align-self-center">
-						<img data-src="./images/skills-images/postman.png" alt="webstorm icon">
-						<p>Postman</p>
-					</picture>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+            <div class="mr-4 mr-md-0 row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2 class="m-4">
+                        Custom responsive Wordpress theme for Actclub.org
+                    </h2>
+                    <span class="badge badge-success">Wordpress</span>
+                    <span class="badge badge-primary">Advanced Custom Fields</span>
+                    <span class="badge badge-primary">Custom Queries</span>
+                    <div class="mt-3 row justify-content-center">
+                        <div class="col-12 col-md-2 text-center text-lg-right">
+                            <h5>Background</h5>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <ul class="text-left" id="boo">
+                                <li>
+                                    Wordpress theme for ACT Club, will also be applied to their 5 sister international
+                                    sites: ACT China, ACT Latin America, ACT Vietnam, ACT Africa, ACT Middle East.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-3 row justify-content-center">
+                        <div class="col-12 col-md-2 text-center text-lg-right">
+                            <h5>Features</h5>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <ul class="text-left" id="boo">
+                                <li>
+                                    Events in the homepage Event widget and on the Events page are easily added in the
+                                    admin by creating a new Event post. Advanced Custom Fields are used to clearly
+                                    organize the input of info in these post types.
+                                </li>
+                                <li>Posts can be picked to be featured on the homepage by selecting a "Feature on
+                                    Homepage" ACF checkbox
+                                </li>
+                                <li>The Event Widget on the homepage breaks events into month views. Selecting
+                                    each month in the widget header shows only the events for that month.
+                                </li>
+                                <li>When a Month is selected, the countdown changes to show the time to start for the
+                                    soonest event in the month
+                                </li>
+                                <li>Once an event end date has passed, the event widget stop displaying it.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mb-3 justify-content-center">
+                        <div class="col-12">
+                            <a href="http://demo-act.nicholasengleman.com/" target="_blank">
+                                <button>View</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
 
-<div class="container-fluid panel projects" id="apps">
-	<div class="container">
-		<div class="row my-4 justify-content-center">
-			<div class="col-12">
-				<h1 class="my-3">Projects</h1>
-			</div>
-		</div>
+            <div class="row pt-3 d-flex justify-content-center">
+                <div class="img-width">
+                    <img
+                            src="./images/project-images/truewx-app.jpg"
+                            alt="screen shot of app running"
+                    />
+                </div>
+            </div>
 
-		<div class="row justify-content-center">
-			<div class="col-10">
-				<img data-src="./images/project-images/store-app.png" alt="screen shot of app running">
-			</div>
-		</div>
+            <div class="mr-4 mr-md-0 row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2 class="m-4">
+                        Custom responsive Wordpress theme used in production on Truewx.com
+                    </h2>
+                    <span class="badge badge-success">Wordpress</span>
+                    <span class="badge badge-primary">Advanced Custom Fields</span>
+                    <span class="badge badge-primary">Custom Queries</span>
+                    <div class="mt-3 row justify-content-center">
+                        <div class="col-12 col-md-2 text-center text-lg-right">
+                            <h5>Background</h5>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <ul class="text-left" id="boo">
+                                <li>
+                                    Wordpress theme for Truewx.com, a weather data company
+                                </li>
+                                <li>Responsible for 100% of the theme development outside of design</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-3 row justify-content-center">
+                        <div class="col-12 col-md-2 text-center text-lg-right">
+                            <h5>Features</h5>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <ul class="text-left" id="boo">
+                                <li>
+                                    All text and images on the site are ACF fields, allowing non-technical users to
+                                    easily swap in new content in the admin.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mb-3 justify-content-center">
+                        <div class="col-12">
+                            <a href="https://truewx.com/" target="_blank">
+                                <button>View</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
 
-		<div class="mr-4 mr-md-0 row justify-content-center">
-			<div class="col-12 text-center">
-				<h2 class="m-4">Full Stack Pinterest-Clone</h2>
-				<span class="badge badge-success">react</span>
-				<span class="badge badge-primary">node</span>
-				<span class="badge badge-success">express</span>
-				<span class="badge badge-primary">mongoDB</span>
-				<span class="badge badge-success">mongoose</span>
-				<div class="mt-3 row justify-content-center">
-					<div class="col-12 col-md-2 text-left text-lg-right">
-						<h5>User Features</h5>
-					</div>
-					<div class="col-12 col-md-8">
-						<ul class="text-left" id="boo">
-							<li>Click a product's Save button to edit the product decription, and then save the
-								product to an existing board or to a new board.
-							</li>
-							<li>View a product to leave a comment.</li>
-							<li>Click the Board's tab at the top to create a new board, view your existing boards,
-								edit the title or decription of your boards or delete them. Click each board to see
-								the products saved to that board.
-							</li>
-							<li>Click the Pin's tab at the top to see all your saved products. Remove any saved
-								product by clicking the X.
-							</li>
-							<li>Find products via any combination of price filters, tag filters and search terms
-							</li>
-							<li>Create an account to save your comments, boards and pins.</li>
-						</ul>
-					</div>
-				</div>
-				<div class="mt-3 row justify-content-center"></div>
-				<div class="mt-3 row justify-content-center">
-					<div class="col-12 col-md-2 text-left text-lg-right">
-						<h5>Technical Features</h5>
-					</div>
-					<div class="col-12 col-md-8">
-						<ul class="text-left">
-							<li>Multi-page, responsive web application built with React, Node, Express, Mongoose and
-								MongoDB containing 3 modals and 16 react components
-							</li>
-							<li>Created 8 Express Post and Get APIs for loading product data, creating and editing
-								user boards, saving and editing user comments and registering, logging-in and
-								logging-out users
-							</li>
-							<li>Created React functionality for creating and editing boards, which the user can then
-								save products to from across the application
-							</li>
-							<li>Developed React Commenting UI, allowing users to post, edit and delete comments on
-								each product
-							</li>
-							<li>Designed React toast system for alerting users when their requested action has
-								completed
-							</li>
-							<li>Created React functionality for finding products via any combination of price
-								filters, tag filters and search terms
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-12 col-md-3">
-						<a href="store-app">
-							<button>TRY APP</button>
-						</a>
-					</div>
-					<div class="col-12 col-md-3">
-						<a href="https://github.com/nicholasengleman/React-CMS">
-							<button>GITHUB REPO</button>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
+            <div class="row pt-3 d-flex justify-content-center">
+                <div class="img-width">
+                    <img
+                            src="./images/project-images/sedc-app.jpg"
+                            alt="screen shot of app running"
+                    />
+                </div>
+            </div>
 
-		<hr class="m-5">
+            <div class="mr-4 mr-md-0 row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2 class="m-4">
+                        Custom responsive Wordpress theme used in production on Sedata.com
+                    </h2>
+                    <span class="badge badge-success">Wordpress</span>
+                    <span class="badge badge-primary">Advanced Custom Fields</span>
+                    <span class="badge badge-primary">Custom Queries</span>
+                    <div class="mt-3 row justify-content-center">
+                        <div class="col-12 col-md-2 text-center text-lg-right">
+                            <h5>Background</h5>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <ul class="text-left" id="boo">
+                                <li>
+                                    Wordpress theme for Sedata.com, one of the largest providers of utility software in
+                                    the southeast
+                                </li>
+                                <li>Responsible for 100% of the theme development outside of design.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-3 row justify-content-center">
+                        <div class="col-12 col-md-2 text-center text-lg-right">
+                            <h5>Features</h5>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <ul class="text-left" id="boo">
+                                <li>
+                                    Theme has 4 custom post types, search funtunality, contact and request demo forms
+                                    that open in modals, dynamic sidebar that loads widgets in random
+                                    order on each page load, youtube videos that open in modals and more
+                                </li>
+                                <li>
+                                    All content can be easily changed in the admin with ACF fields
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mb-3 justify-content-center">
+                        <div class="col-12">
+                            <a href="https://www.sedata.com/" target="_blank">
+                                <button>View</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
 
-		<div class="row justify-content-center">
-			<div class="col-10">
-				<img data-src="./images/project-images/crypto-app.png" alt="screen shot of app running">
-			</div>
-		</div>
+            <div class="row justify-content-center mb-5" id="react-apps">
+                <div class="col-10">
+                    <h1>React Projects</h1>
+                </div>
+            </div>
 
-		<div class="mr-4 mr-md-0 row justify-content-center">
-			<div class="col-12 text-center">
-				<h2 class="m-4">Cryptocurrency Filter and Events React App</h2>
-				<span class="badge badge-success">react</span>
-				<span class="badge badge-primary">coinmarketcap api</span>
-				<span class="badge badge-primary">chasing-coins api</span>
-				<div class="mt-3 row justify-content-center">
-					<div class="col-12 col-md-2  text-left text-lg-right">
-						<h5>User Features</h5>
-					</div>
-					<div class="col-12 col-md-8">
-						<ul class="text-left">
-							<li>Filter and sort cryptocurrencies, returning only there where the data is above x,
-								below y, or between x and y
-							</li>
-							<li>Combine several filters together to refine the search</li>
-							<li>On each crypto's page, see a description of the crypto with a link for more info, a
-								TradingView.com chart and a list of up to the next 5 events
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="mt-3 row justify-content-center"></div>
-				<div class="mt-3 row justify-content-center">
-					<div class="col-12 col-md-2  text-left text-lg-right">
-						<h5>Technical Features</h5>
-					</div>
-					<div class="col-12 col-md-8">
-						<ul class="text-left">
-							<li>Used React Router 4 to control routing and developed functionality for passing
-								prop and state data through React Router Link Component
-							</li>
-							<li>Used JSX and Conditional Rendering to control button actions, button UI and
-								error messages for empty strings
-							</li>
-							<li>Converted all inputs into Controlled Components</li>
-							<li>Imported JSON data from coinmarketcap.com and chasing-coins.com APIs using Fetch
-								API
-							</li>
-							<li>Imported TradingView.com chart via NPM package</li>
-							<li>Imported event data from kryptocal.com API, developed ES6 functions to clean
-								data and filter up to next 5 events
-							</li>
-							<li>Built JSON file holding crypto descriptions and links that is imported and
-								dynamically accessed on each page
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-12 col-md-3">
-						<a href="cryptofilter-app">
-							<button>TRY APP</button>
-						</a>
-					</div>
-					<div class="col-12 col-md-3">
-						<a href="https://github.com/nicholasengleman/crypto-screener">
-							<button>GITHUB REPO</button>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
+            <div class="row pt-3 d-flex justify-content-center">
+                <div class="img-width">
+                    <img
+                            src="./images/project-images/store-app.jpg"
+                            alt="screen shot of app running"
+                    />
+                </div>
+            </div>
 
-		<hr class="m-5">
+            <div class="mr-4 mr-md-0 row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2 class="m-4">
+                        Full-Stack Commerce Site with Pinterest Functionality
+                    </h2>
+                    <span class="badge badge-success">react</span>
+                    <span class="badge badge-primary">node</span>
+                    <span class="badge badge-success">express</span>
+                    <span class="badge badge-primary">mongoDB</span>
+                    <span class="badge badge-success">mongoose</span>
+                    <div class="mt-3 row justify-content-center">
+                        <div class="col-12 col-md-2 text-center text-lg-right">
+                            <h5>Background</h5>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <ul class="text-left" id="boo">
+                                <li>
+                                    This project began as a challenge to myself to create a
+                                    commerce CMS with the ability for an admin to add, edit and
+                                    delete products, while users could filter, search, comment
+                                    on and save products to a ‘favorite’ list.
+                                </li>
+                                <li>
+                                    I then decided to adopt the UI of Pinterest, using Gestalt
+                                    about 50% of the time, which is the set of React UI
+                                    components released by the Pinterest Dev team.
+                                </li>
+                                <li>
+                                    Finally, I switched out the simple favoriting functionality
+                                    for a Pinterest-type “save-to-boards” functionality,
+                                    allowing users to create multiple boards, which products can
+                                    then be saved to from across the application.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-3 row justify-content-center">
+                        <div class="col-12 col-md-2 text-center text-lg-right">
+                            <h5>User Features</h5>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <ul class="text-left" id="boo">
+                                <li>
+                                    Click a product's Save button to edit the product
+                                    description, and then save the product to an existing board
+                                    or to a new board.
+                                </li>
+                                <li>View a product to leave a comment.</li>
+                                <li>
+                                    Click the Board's tab at the top to create a new board, view
+                                    your existing boards, edit the title or description of your
+                                    boards or delete them. Click each board to see the products
+                                    saved to that board.
+                                </li>
+                                <li>
+                                    Click the Pin's tab at the top to see all your saved
+                                    products. Remove any saved product by clicking the X.
+                                </li>
+                                <li>
+                                    Find products via any combination of price filters, tag
+                                    filters and search terms
+                                </li>
+                                <li>
+                                    Create an account to save your comments, boards and pins.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-3 row justify-content-center">
+                        <div class="col-12 col-md-2 text-center text-lg-right">
+                            <h5>Technical Features</h5>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <ul class="text-left">
+                                <li>
+                                    Multi-page, responsive web application built with React,
+                                    Node, Express, Mongoose and MongoDB containing 3 modals and
+                                    16 react components
+                                </li>
+                                <li>
+                                    Created 8 Express Post and Get APIs for loading product
+                                    data, creating and editing user boards, saving and editing
+                                    user comments and registering, logging-in and logging-out
+                                    users
+                                </li>
+                                <li>
+                                    Created React functionality for creating and editing boards,
+                                    which the user can then save products to from across the
+                                    application
+                                </li>
+                                <li>
+                                    Developed React Commenting UI, allowing users to post, edit
+                                    and delete comments on each product
+                                </li>
+                                <li>
+                                    Designed React toast system for alerting users when their
+                                    requested action has completed
+                                </li>
+                                <li>
+                                    Created React functionality for finding products via any
+                                    combination of price filters, tag filters and search terms
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mb-3 justify-content-center">
+                        <div class="col-12 col-md-3">
+                            <a href="pinterest-clone" target="_blank">
+                                <button>TRY</button>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <a
+                                    href="https://github.com/nicholasengleman/React-CMS"
+                                    target="_blank"
+                            >
+                                <button>GITHUB REPO</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-		<div class="row justify-content-center">
-			<div class="col-10">
-				<img data-src="./images/project-images/calculator-app.png" alt="screen shot of app running">
-			</div>
-		</div>
+            <hr/>
 
-		<div class="mr-4 mr-md-0 row justify-content-center">
-			<div class="col-12 text-center">
-				<h2 class="m-4">Advanced Scientific Calculator</h2>
-				<span class="badge badge-success">javascript</span>
-				<div class="mt-3 row justify-content-center">
-					<div class="col-12 col-md-2  text-left text-lg-right">
-						<h5>User Features</h5>
-					</div>
-					<div class="col-12 col-md-8">
-						<ul class="text-left">
-							<li>Supports complex equations with nested parentheses.</li>
-							<li>Keyboard number entry and undo.</li>
-							<li>Dynamic font sizing for long equations.
-							<li>History view shows last 6 inputs.</li>
-						</ul>
-					</div>
-				</div>
-				<div class="mt-3 row justify-content-center"></div>
-				<div class="mt-3 row justify-content-center">
-					<div class="col-12 col-md-2  text-left text-lg-right">
-						<h5>Technical Features</h5>
-					</div>
-					<div class="col-12 col-md-8">
-						<ul class="text-left">
-							<li>Used MVC Architecture to organize all functions into Model, View, and
-								Control objects
-							</li>
-							<li>Developed functionality for computing complex equations with nested
-								parentheses containing up to 17 different mathematical operations
-							</li>
-							<li>Added event listeners for accepting keyboard input</li>
-							<li>Checks if operation is a valid mathematical operation
-								and creates error message if it is not
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-12 col-md-3">
-						<a href="calculator-app">
-							<button>TRY APP</button>
-						</a>
-					</div>
-					<div class="col-12 col-md-3">
-						<a href="https://github.com/nicholasengleman/scientific-calculator">
-							<button>GITHUB REPO</button>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
+            <div class="row pt-3 d-flex justify-content-center">
+                <div class="img-width">
+                    <img
+                            src="./images/project-images/crypto-app.png"
+                            alt="screen shot of app running"
+                    />
+                </div>
+            </div>
 
-		<hr class="m-5">
+            <div class="mr-4 mr-md-0 row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2 class="m-4">Cryptocurrency Filter and Events React App</h2>
+                    <span class="badge badge-success">react</span>
+                    <span class="badge badge-primary">coinmarketcap api</span>
+                    <span class="badge badge-primary">chasing-coins api</span>
+                    <div class="mt-3 row justify-content-center">
+                        <div class="col-12 col-md-2  text-center text-lg-right">
+                            <h5>Background</h5>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <ul class="text-left">
+                                <li>
+                                    I started this project because I was not happy with the
+                                    simplicity of filters on current crypto websites. I wanted
+                                    the ability to combine multiple filters when searching, to
+                                    find for example cryptos “that are down at least 20% over
+                                    the week, but up at least 5% today, with a market cap over
+                                    $50M”.
+                                </li>
+                                <li>
+                                    After creating that functionality, I then decided to add an
+                                    event list, showing up to the next 5 events related to each
+                                    crypto, since crypto sites with daily financial data rarely
+                                    show events.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-3 row justify-content-center">
+                        <div class="col-12 col-md-2  text-center text-lg-right">
+                            <h5>User Features</h5>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <ul class="text-left">
+                                <li>
+                                    Filter and sort cryptocurrencies, returning only there where
+                                    the data is above x, below y, or between x and y
+                                </li>
+                                <li>Combine several filters together to refine the search</li>
+                                <li>
+                                    On each crypto's page, see a description of the crypto with
+                                    a link for more info, a TradingView.com chart and a list of
+                                    up to the next 5 events
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-3 row justify-content-center">
+                        <div class="col-12 col-md-2 text-center text-lg-right">
+                            <h5>Technical Features</h5>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <ul class="text-left">
+                                <li>
+                                    Used React Router 4 to control routing and developed
+                                    functionality for passing prop and state data through React
+                                    Router Link Component
+                                </li>
+                                <li>
+                                    Used JSX and Conditional Rendering to control button
+                                    actions, button UI and error messages for empty strings
+                                </li>
+                                <li>Converted all inputs into Controlled Components</li>
+                                <li>
+                                    Imported JSON data from coinmarketcap.com and
+                                    chasing-coins.com APIs using Fetch API
+                                </li>
+                                <li>Imported TradingView.com chart via NPM package</li>
+                                <li>
+                                    Imported event data from kryptocal.com API, developed ES6
+                                    functions to clean data and filter up to next 5 events
+                                </li>
+                                <li>
+                                    Built JSON file holding crypto descriptions and links that
+                                    is imported and dynamically accessed on each page
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mb-3 justify-content-center">
+                        <div class="col-12 col-md-3">
+                            <a href="cryptofilter-app" target="_blank">
+                                <button>TRY</button>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <a
+                                    href="https://github.com/nicholasengleman/crypto-screener"
+                                    target="_blank"
+                            >
+                                <button>GITHUB REPO</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-		<div class="row justify-content-center">
-			<div class="col-10">
-				<img data-src="./images/project-images/weather-app.png" alt="screen shot of app running">
-			</div>
-		</div>
+            <hr/>
+            <div class="row justify-content-center mb-5" id="javascript-apps">
+                <div class="col-10">
+                    <h1>Javascript/jQuery Projects</h1>
+                </div>
+            </div>
 
-		<div class="mr-4 mr-md-0 row justify-content-center">
-			<div class="col-12 text-center">
-				<h2 class="m-4">Weather App</h2>
-				<span class="badge badge-success">javascript</span>
-				<span class="badge badge-success">jquery</span>
-				<span class="badge badge-primary">geolocation api</span>
-				<span class="badge badge-primary">openweathermap api</span>
-				<span class="badge badge-primary">googlemaps api</span>
-				<div class="mt-3 row justify-content-center">
-					<div class="col-12 col-md-2  text-left text-lg-right">
-						<h5>User Features</h5>
-					</div>
-					<div class="col-12 col-md-8">
-						<ul class="text-left">
-							<li>See current weather and weather forecast for next 4 days at your location</li>
-							<li>Input zip code to see weather at another location</li>
-							<li>Hover over each day's weather forecast to see the 4 6-hr forecasts for that
-								day
-							</li>
-							<li>Switch between fahrenheit and celsius</li>
-						</ul>
-					</div>
-				</div>
-				<div class="mt-3 row justify-content-center"></div>
-				<div class="mt-3 row justify-content-center">
-					<div class="col-12 col-md-2  text-left text-lg-right">
-						<h5>Technical Features</h5>
-					</div>
-					<div class="col-12 col-md-8">
-						<ul class="text-left">
-							<li>Used MVC Architecture to organize all functions into Model, View, and
-								Control objects
-							</li>
-							<li>Created functionality for intelligently transforming 3-hour JSON forecast
-								data into meaningful 6-hour forecasts
-							</li>
-							<li>Developed functionality for quickly loading and hiding intraday forecasts
-								on mouse hover of daily forecasts
-							</li>
-							<li>Utilized jQuery Ajax to import weather and location data using
-								OpenWeatherMap API and Geolocation API
-							</li>
-							<li>Utilized Regex Pattern and Try-Catch statement to test for valid zip code
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-12 col-md-3">
-						<a href="weather-app">
-							<button>TRY APP</button>
-						</a>
-					</div>
-					<div class="col-12 col-md-3">
-						<a href="https://github.com/nicholasengleman/local-weather-app">
-							<button>GITHUB REPO</button>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
+            <div class="row pt-3 d-flex justify-content-center">
+                <div class="img-width">
+                    <img
+                            src="./images/project-images/calculator-app.png"
+                            alt="screen shot of app running"
+                    />
+                </div>
+            </div>
 
-		<hr class="m-5">
+            <div class="mr-4 mr-md-0 row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2 class="m-4">Advanced Scientific Calculator</h2>
+                    <span class="badge badge-success">javascript</span>
+                    <div class="mt-3 row justify-content-center">
+                        <div class="col-12 col-md-2 text-center text-lg-right">
+                            <h5>Background</h5>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <ul class="text-left">
+                                <li>
+                                    The goal with this project was to make as feature complete a
+                                    calculator as possible. The result was a scientific
+                                    calculator with 17 functions that takes any equation, parses
+                                    inputs into tokens, and computes the solution one step at a
+                                    time, beginning with the innermost group of parentheses.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-3 row justify-content-center">
+                        <div class="col-12 col-md-2 text-center text-lg-right">
+                            <h5>User Features</h5>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <ul class="text-left">
+                                <li>Supports complex equations with nested parentheses.</li>
+                                <li>Keyboard number entry and undo.</li>
+                                <li>Dynamic font sizing for long equations.</li>
+                                <li>History view shows last 6 inputs.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-3 row justify-content-center">
+                        <div class="col-12 col-md-2 text-center text-lg-right">
+                            <h5>Technical Features</h5>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <ul class="text-left">
+                                <li>
+                                    Used MVC Architecture to organize all functions into Model,
+                                    View, and Control Javascript objects
+                                </li>
+                                <li>
+                                    Developed functionality for computing complex equations with
+                                    nested parentheses containing up to 17 different
+                                    mathematical operations
+                                </li>
+                                <li>
+                                    Created functions to test if input is a valid mathematical
+                                    operation
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mb-3 justify-content-center">
+                        <div class="col-12 col-md-3">
+                            <a href="calculator-app" target="_blank">
+                                <button>TRY</button>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <a
+                                    href="https://github.com/nicholasengleman/scientific-calculator"
+                                    target="_blank"
+                            >
+                                <button>GITHUB REPO</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-		<div class="row justify-content-center">
-			<div class="col-10">
-				<img data-src="./images/project-images/todo-app.png" alt="screen shot of app running">
-			</div>
-		</div>
+            <hr/>
 
-		<div class="mr-4 mr-md-0 row justify-content-center">
-			<div class="col-12 text-center">
-				<h2 class="m-4">Todo App</h2>
-				<span class="badge badge-success">javascript</span>
-				<div class="mt-3 row justify-content-center">
-					<div class="col-12 col-md-2 text-left text-lg-right">
-						<h5>User Features</h5>
-					</div>
-					<div class="col-12 col-md-8">
-						<ul class="text-left">
-							<li>Todos can be filtered by active or completed status</li>
-							<li>Completed Todos can be cleared</li>
-							<li>Individual Todos can be edited</li>
-						</ul>
-					</div>
-				</div>
-				<div class="mt-3 row justify-content-center"></div>
-				<div class="mt-3 row justify-content-center">
-					<div class="col-12 col-md-2 text-left text-lg-right">
-						<h5>Technical Features</h5>
-					</div>
-					<div class="col-12 col-md-8">
-						<ul class="text-left">
-							<li>Used MVC Architecture to organize all functions into Model, View, and
-								Control objects
-							</li>
-							<li>Implemented storage of todo data via local storage</li>
-						</ul>
-					</div>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-12 col-md-3">
-						<a href="todo-app">
-							<button>TRY APP</button>
-						</a>
-					</div>
-					<div class="col-12 col-md-3">
-						<a href="https://github.com/nicholasengleman/todo-app-with-filtering">
-							<button>GITHUB REPO</button>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
+            <div class="row pt-3 d-flex justify-content-center">
+                <div class="img-width">
+                    <img
+                            src="./images/project-images/weather-app.png"
+                            alt="screen shot of app running"
+                    />
+                </div>
+            </div>
 
-	</div>
-</div>
+            <div class="mr-4 mr-md-0 row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2 class="m-4">Weather App</h2>
+                    <span class="badge badge-success">javascript</span>
+                    <span class="badge badge-success">jquery</span>
+                    <span class="badge badge-primary">geolocation api</span>
+                    <span class="badge badge-primary">openweathermap api</span>
+                    <span class="badge badge-primary">googlemaps api</span>
+                    <div class="mt-3 row justify-content-center">
+                        <div class="col-12 col-md-2 text-center text-lg-right">
+                            <h5>User Features</h5>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <ul class="text-left">
+                                <li>
+                                    See current weather and weather forecast for next 4 days at
+                                    your location
+                                </li>
+                                <li>Input zip code to see weather at another location</li>
+                                <li>
+                                    Hover over each day's weather forecast to see the 4 6-hr
+                                    forecasts for that day
+                                </li>
+                                <li>Switch between fahrenheit and celsius</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-3 row justify-content-center"></div>
+                    <div class="mt-3 row justify-content-center">
+                        <div class="col-12 col-md-2 text-center text-lg-right">
+                            <h5>Technical Features</h5>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <ul class="text-left">
+                                <li>
+                                    Used MVC Architecture to organize all functions into Model,
+                                    View, and Control objects
+                                </li>
+                                <li>
+                                    Created functionality for intelligently transforming 3-hour
+                                    JSON forecast data into meaningful 6-hour forecasts
+                                </li>
+                                <li>
+                                    Developed functionality for quickly loading and hiding
+                                    intraday forecasts on mouse hover of daily forecasts
+                                </li>
+                                <li>
+                                    Utilized jQuery Ajax to import weather and location data
+                                    using OpenWeatherMap API and Geolocation API
+                                </li>
+                                <li>
+                                    Utilized Regex Pattern and Try-Catch statement to test for
+                                    valid zip code
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mb-3 justify-content-center">
+                        <div class="col-12 col-md-3">
+                            <a href="weather-app" target="_blank">
+                                <button>TRY</button>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <a
+                                    href="https://github.com/nicholasengleman/local-weather-app"
+                                    target="_blank"
+                            >
+                                <button>GITHUB REPO</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <hr/>
 
-<footer>
-	<div>
-		<a href='http://www.freepik.com/free-vector/professional-programmer-engineer-writing-code_1311615.htm'>Icons
-			designed by Freepik</a></div>
-</footer>
+            <div class="row pt-3 d-flex justify-content-center">
+                <div class="img-width">
+                    <img
+                            src="./images/project-images/todo-app.png"
+                            alt="screen shot of app running"
+                    />
+                </div>
+            </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/hideMenuOnClick.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/10.4.2/lazyload.min.js"></script>
-<script> var myLazyLoad = new LazyLoad(); </script>
-<script src="https://use.fontawesome.com/744cab0980.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+            <div class="mr-4 mr-md-0 row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2 class="m-4">Todo App</h2>
+                    <span class="badge badge-success">javascript</span>
+                    <div class="mt-3 row justify-content-center">
+                        <div class="col-12 col-md-2 text-center text-lg-right">
+                            <h5>User Features</h5>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <ul class="text-left">
+                                <li>Todos can be filtered by active or completed status</li>
+                                <li>Completed Todos can be cleared</li>
+                                <li>Individual Todos can be edited</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-3 row justify-content-center"></div>
+                    <div class="mt-3 row justify-content-center">
+                        <div class="col-12 col-md-2 text-center text-lg-right">
+                            <h5>Technical Features</h5>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <ul class="text-left">
+                                <li>
+                                    Used MVC Architecture to organize all functions into Model,
+                                    View, and Control objects
+                                </li>
+                                <li>Implemented storage of todo data via local storage</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mb-3 justify-content-center">
+                        <div class="col-12 col-md-3">
+                            <a href="todo-app" target="_blank">
+                                <button>TRY</button>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <a
+                                    href="https://github.com/nicholasengleman/todo-app-with-filtering"
+                                    target="_blank"
+                            >
+                                <button>GITHUB REPO</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <hr/>
+
+            <div class="row pt-3 d-flex justify-content-center">
+                <div class="img-width">
+                    <img
+                            src="./images/project-images/wikipedia-app.png"
+                            alt="screen shot of app running"
+                    />
+                </div>
+            </div>
+
+            <div class="mr-4 mr-md-0 row justify-content-center">
+                <div class="col-12 text-center older">
+                    <h2 class="m-4">Wikipedia App</h2>
+                    <p>(older project from 2016)</p>
+                    <span class="badge badge-success">jQuery</span>
+                    <span class="badge badge-primary">css</span>
+                    <div class="mt-3 row justify-content-center">
+                        <div class="col-12 col-md-2 text-center text-lg-right">
+                            <h5>User Features</h5>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <ul class="text-left">
+                                <li>
+                                    Input keyword to search for matching wikipedia articles
+                                </li>
+                                <li>Select how many articles to return using the slider</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mb-3 justify-content-center">
+                        <div class="col-12 col-md-3">
+                            <a href="wikipedia-viewer-app" target="_blank">
+                                <button>TRY</button>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <a
+                                    href="https://github.com/nicholasengleman/wikipedia-article-finder"
+                                    target="_blank"
+                            >
+                                <button>GITHUB REPO</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr/>
+
+            <div class="row pt-3 d-flex justify-content-center">
+                <div class="img-width">
+                    <img
+                            src="./images/project-images/got-app.png"
+                            alt="screen shot of app running"
+                    />
+                </div>
+            </div>
+
+            <div class="mr-4 mr-md-0 row justify-content-center">
+                <div class="col-12 text-center older">
+                    <h2 class="m-4">Game of Thrones App</h2>
+                    <p>(older project from 2016)</p>
+                    <span class="badge badge-success">jQuery</span>
+                    <span class="badge badge-primary">css</span>
+                    <div class="mt-3 row justify-content-center">
+                        <div class="col-12 col-md-2 text-center text-lg-right">
+                            <h5>User Features</h5>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <ul class="text-left">
+                                <li>
+                                    Click "next quote" to see new Game Of Thrones quotes while
+                                    the background colors change
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-3">
+                            <a href="got-quotes-app" target="_blank">
+                                <button>TRY</button>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <a
+                                    href="https://github.com/nicholasengleman/top-10-got-quotes"
+                                    target="_blank"
+                            >
+                                <button>GITHUB REPO</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <a
+                    href="http://www.freepik.com/free-vector/professional-programmer-engineer-writing-code_1311615.htm"
+            >Icons designed by Freepik</a
+            >
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/hideMenuOnClick.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="https://use.fontawesome.com/744cab0980.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

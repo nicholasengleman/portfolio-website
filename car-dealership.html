@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Car Dealership Homepage</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+		  integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/car-dealership/homepage.css"/>
+</head>
+<body>
+<header>
+	<nav>
+		<ul>
+			<li>
+				<i class="fas fa-align-left"></i>
+			</li>
+			<li>Your Neighborhood Dealership</li>
+		</ul>
+		<ul>
+			<li><a href="car-dealership/cars-new.html">New Cars</a></li>
+			<li><a href="car-dealership/cars-preowned.html">Pre-Owned</a></li>
+			<li><a href="car-dealership/service.html">Service</a></li>
+			<li>Locations</li>
+		</ul>
+	</nav>
+
+	<div class="greeting">
+		<h1><span>over 150,000</span><br/><span>happy car buyers</span></h1>
+	</div>
+
+	<form id="carform">
+		<select name="carMakes" form="carform">
+			<option value="all-makes">All Makes</option>
+			<option value="Acura">Acura</option>
+			<option value="Audi">Audi</option>
+			<option value="BMW">BMW</option>
+			<option value="Buick">Buick</option>
+			<option value="Cadillac">Cadillac</option>
+		</select>
+		<select name="carModels" form="carform">
+			<option value="all-models">All Models</option>
+			<option value="124 Spider">124 Spider</option>
+			<option value="1500">1500</option>
+			<option value="2 Series">2 Series</option>
+			<option value="200">200</option>
+			<option value="370Z Roadster">370Z Roadster</option>
+		</select>
+		<select name="carPrices" form="carform">
+			<option value="all-prices">All Prices</option>
+			<option value="0-5000">0 - 5,000</option>
+			<option value="5000-10000">5000-10000</option>
+			<option value="10000-20000">10,000 - 20,000</option>
+			<option value="20000-40000">20,000-40,000</option>
+			<option value="40000-50000">40,000 - 50,000</option>
+		</select>
+		<button type="submit">Search</button>
+	</form>
+</header>
+<main>
+	<div class="selectCars">
+		<div class="sideBar">
+			<h2><span>What's<br/> your <br/></span><span>style?</span></h2>
+			<div class="selectCarsSelector">Make</div>
+			<div class="selectCarsSelector">Category</div>
+			<hr/>
+			<div class="sideBarExplanation"><p>Search by category and brand <br/>or refine your search below.</p></div>
+		</div>
+		<div class="autosContainer">
+			<a href="car-dealership/cars-new.html" class="auto">
+				<img src="images/car-dealership-images/carsLogos/buick.png">
+				<h3>Buick</h3>
+			</a>
+			<a href="car-dealership/cars-new.html" class="auto">
+				<img src="images/car-dealership-images/carsLogos/cadillac-logo.png">
+				<h3>Cadillac</h3>
+			</a>
+			<a href="car-dealership/cars-new.html" class="auto">
+				<img src="images/car-dealership-images/carsLogos/chevy.png">
+				<h3>Chevrolet</h3>
+			</a>
+			<a href="car-dealership/cars-new.html" class="auto">
+				<img src="images/car-dealership-images/carsLogos/chrysler.png">
+				<h3>Chrysler</h3>
+			</a>
+			<a href="car-dealership/cars-new.html" class="auto">
+				<img src="images/car-dealership-images/carsLogos/dodge.png">
+				<h3>Dodge</h3>
+			</a>
+			<a href="car-dealership/cars-new.html" class="auto">
+				<img src="images/car-dealership-images/carsLogos/ford.png">
+				<h3>Ford</h3>
+			</a>
+			<a href="car-dealership/cars-new.html" class="auto">
+				<img src="images/car-dealership-images/carsLogos/genesis.png">
+				<h3>Genesis</h3>
+			</a>
+			<a href="car-dealership/cars-new.html" class="auto">
+				<img src="images/car-dealership-images/carsLogos/gmc-1.png">
+				<h3>GMC</h3>
+			</a>
+			<a href="car-dealership/cars-new.html" class="auto">
+				<img src="images/car-dealership-images/carsLogos/jeep.png">
+				<h3>Jeep</h3>
+			</a>
+			<a href="car-dealership/cars-new.html" class="auto">
+				<img src="images/car-dealership-images/carsLogos/kia.png">
+				<h3>KIA</h3>
+			</a>
+			<a href="car-dealership/cars-new.html" class="auto">
+				<img src="images/car-dealership-images/carsLogos/mazda.png">
+				<h3>Mazda</h3>
+			</a>
+			<a href="car-dealership/cars-new.html" class="auto">
+				<img src="images/car-dealership-images/carsLogos/nissan.png">
+				<h3>Nissan</h3>
+			</a>
+			<a href="car-dealership/cars-new.html" class="auto">
+				<img src="images/car-dealership-images/carsLogos/ram.png">
+				<h3>RAM</h3>
+			</a>
+			<a href="car-dealership/cars-new.html" class="auto">
+				<img src="images/car-dealership-images/carsLogos/subaru.png">
+				<h3>Subaru</h3>
+			</a>
+			<a href="car-dealership/cars-new.html" class="auto">
+				<img src="images/car-dealership-images/carsLogos/vw.png">
+				<h3>Volkswagon</h3>
+			</a>
+		</div>
+	</div>
+
+	<section class="featuresContainer">
+		<div class="feature">
+			<div class="featureHeading">
+				<h2><span class="firstRow">Award <br/> Winning</span><br/> Parts <br/><span class="highlight">&</span>Service<br/>
+					Team
+				</h2>
+			</div>
+			<hr/>
+			<div class="summary">
+				<p class="firstRow">Featuring</p>
+				<h3>Certified Technicians & Guinine Parts</h3>
+				<p class="firstRow">Everything from Tire Pressure to engine overhauls</p>
+			</div>
+			<a href="car-dealership/service.html">
+				<button>Service Locations</button>
+			</a>
+		</div>
+		<div class="feature">
+			<div class="featureHeading firstRow">
+				<h2>It's<br/><span class="firstRow">Easy <br/>Money</span><br/></h2>
+			</div>
+			<hr/>
+			<div class="summary">
+				<p class="firstRow">Featuring</p>
+				<h3>DGDG Buy Center</h3>
+				<p class="firstRow">Get an instant offer with Kelly Blue Book Instant Cash Offer</p>
+			</div>
+			<button>Begin Now</button>
+		</div>
+		<div class="feature 2ndRow">
+			<div class="featureHeading">
+				<h2><span class="secondRow">Every <br/> Car <br/> Priced</span><br/>Up<br/>Front</h2>
+			</div>
+			<hr/>
+			<div class="summary">
+				<p class="secondRow">All prices based on the</p>
+				<h3>KBB.com Price Advisor</h3>
+			</div>
+			<button>How it works</button>
+		</div>
+		<div class="feature 2ndRow">
+			<div class="featureHeading">
+				<h2><span class="secondRow">No <br/>Brainer <br/> Guarantee?</span><br/>Standard</h2>
+			</div>
+			<hr/>
+			<div class="summary">
+				<p class="secondRow">Featuring</p>
+				<h3>Car buying confidence. Guaranteed.</h3>
+			</div>
+			<a href="car-dealership/deals.html">
+				<button>What's Included</button>
+			</a>
+		</div>
+		<div class="feature firstRow">
+			<div class="featureHeading">
+				<h2><span class="firstRow">Why <br/>Should <br/>You</span><br/>Be<br/>Happy?</h2>
+			</div>
+			<hr/>
+			<div class="summary">
+				<p class="secondRow">Featuring</p>
+				<h3>Over 150,000 Happy Car Buyers</h3>
+			</div>
+			<button>Have you seen it?</button>
+		</div>
+		<div class="feature firstRow">
+			<div class="featureHeading">
+				<h2><span class="firstRow">Our <br/>Promise <br/></span>To<br/>You</h2>
+			</div>
+			<hr/>
+			<div class="summary">
+				<p class="secondRow">Project100</p>
+				<h3>100% happiness, 100% of the time.</h3>
+			</div>
+			<button>What it means</button>
+		</div>
+	</section>
+	<section class="nextSteps">
+		<div class="nextStepsTitle"><span>NOW</span><span>WHAT?</span></div>
+		<div class="nextStepsContainer">
+			<div class="nextStep">
+				<div>
+					<i class="fas fa-search"></i>
+				</div>
+				<div>
+					<h4>Search</h4>
+					<br/>
+					<p><a href="">Find</a> the perfect new or pre-owned vehicle for you!</p>
+					<br/>
+					<p>Don’t see what you’re looking for? <a href="">Contact</a> Us and we’ll be happy to help.</p>
+				</div>
+			</div>
+			<div class="nextStep">
+				<div>
+					<i class="fas fa-sign-in-alt"></i>
+				</div>
+				<div>
+					<h4>Directions</h4>
+					<br/>
+					<p>Get driving or public transportation directions:</p>
+					<br/>
+					<button>View Locations</button>
+				</div>
+			</div>
+			<div class="nextStep">
+				<div>
+					<i class="fas fa-university"></i>
+				</div>
+				<div>
+					<h4>Finance App</h4>
+					<br/>
+					<p><a href="">Applying for credit</a> is easy. We work with over 100 banks and will do our best
+						to find the right lender for you.</p>
+					<br/>
+				</div>
+			</div>
+			<div class="nextStep">
+				<div>
+					<i class="fas fa-briefcase"></i>
+				</div>
+				<div>
+					<h4>Careers</h4>
+					<br/>
+					<p>Like smiling on the job?</p>
+					<br/>
+					<p><a href="">Apply online</a> today and become part of a first-class team. We’ve been named a Bay
+						Area Top Workplace for 6 consecutive years!</p>
+				</div>
+			</div>
+			<div class="nextStep">
+				<div>
+					<i class="fas fa-quote-left"></i>
+				</div>
+				<div>
+					<h4>Leave a Review</h4>
+					<br/>
+					<p>Are you a happy car buyer?</p>
+					<br/>
+					<p>We would love to hear about your experience on our <a href="">Yelp</a> page.</p>
+				</div>
+			</div>
+			<div class="nextStep">
+				<div>
+					<i class="fas fa-heart"></i>
+				</div>
+				<div>
+					<h4>Get Social</h4>
+					<br/>
+					<p>Connect with us and stay up to date with your favorite vehicle brands and more 🙂</p>
+					<br/>
+					<i class="fab fa-twitter-square"></i>
+					<i class="fab fa-facebook-square"></i>
+					<i class="fab fa-google-plus-square"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-pinterest-square"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="mottoContainer">
+		<div class="mottoHeading">
+			<h2>
+				<span>COMPLETE</span><br/><span>HAPPINESS</span>
+			</h2>
+		</div>
+		<div class="mottoDescription">
+			<p>We are 100% committed to every customer’s satisfaction, each and every time they work with us. That is
+				why so many drive away happy and seek us out to satisfy any and all of their automotive needs.</p>
+		</div>
+	</section>
+</main>
+
+<footer>
+	<div class="footerContainer">
+			<div class="menuSections">
+				<ul>
+					<li><h4>Cars</h4></li>
+					<li>All Vehicles</li>
+					<li>New Cars</li>
+					<li>Pre-Owned</li>
+					<li>Certified Pre-Owned</li>
+					<li>Apply for Financing</li>
+					<li>Value Your Trade</li>
+				</ul>
+			</div>
+
+			<div class="menuSections">
+				<ul>
+					<li><h4>Specials</h4></li>
+					<li>No Brainer Deals</li>
+					<li>New Specials</li>
+					<li>Pre-Owned Specials</li>
+					<li>Service Specials</li>
+					<li>Parts Specials</li>
+				</ul>
+			</div>
+
+			<div class="menuSections">
+				<ul>
+					<li><h4>Service</h4></li>
+					<li>Service Center</li>
+					<li>Schedule Service</li>
+					<li>Contact Service</li>
+					<li>Body Shop</li>
+				</ul>
+			</div>
+
+			<div class="menuSections">
+				<ul>
+					<li><h4>Parts</h4></li>
+					<li>Parts Center</li>
+					<li>Order Parts</li>
+					<li>Contact Parts</li>
+				</ul>
+			</div>
+
+			<div class="menuSections">
+				<ul>
+					<li><h4>It's a No Brainer</h4></li>
+					<li>No Brainer Price</li>
+					<li>No Brainer Deals</li>
+					<li>No Brainer Guarantee</li>
+					<li>No Brainer Upgrade</li>
+				</ul>
+			</div>
+
+			<div class="menuSections">
+				<ul>
+					<li><h4>Company</h4></li>
+					<li>About Us</li>
+					<li>Meet Our Team</li>
+					<li>Customer Testamonials</li>
+					<li>Leave Us a Review</li>
+					<li>Get Directions</li>
+				</ul>
+			</div>
+
+			<div class="menuSections">
+				<ul>
+					<li><h4>Careers</h4></li>
+					<li>Apply Online</li>
+				</ul>
+			</div>
+
+			<div class="menuSections">
+				<ul>
+					<li><h4>#behappy</h4></li>
+					<li>
+						<i class="fab fa-twitter-square"></i>
+						<i class="fab fa-facebook-square"></i>
+						<i class="fab fa-youtube"></i>
+						<i class="fab fa-instagram"></i>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="menuFooter">
+			<button class="menuContact">Contact</button>
+			<div class="menuFooterText">
+						<span>
+						<p>Looking to sell your car? </p>
+						<p>&nbsp;	We can help.</p>
+						</span>
+				<span><p>Visit the Buy Center ></p></span>
+			</div>
+		</div>
+
+
+</footer>
+
+
+</body>
+</html>

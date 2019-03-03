@@ -1,0 +1,401 @@
+html {
+  font-size: 0.8vmax; }
+
+body {
+  background: #bbd0f7; }
+
+header {
+  background-color: #6494ed;
+  border-bottom: 1px solid #154eb7;
+  height: 50px;
+  margin-bottom: 50px;
+  width: 100%; }
+  header form {
+    float: right;
+    margin-top: 10px;
+    margin-right: 100px; }
+    header form input {
+      color: black;
+      background-color: #bbd0f7;
+      border: 1px solid #154eb7;
+      border-radius: 4px;
+      height: 10px;
+      letter-spacing: 0.2rem;
+      padding: 10px;
+      outline: none;
+      width: 200px; }
+      header form input:focus {
+        background-color: #e8effc; }
+
+.tempSystem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 10px 0 0 100px;
+  width: 120px; }
+  .tempSystem .selected {
+    background-color: #bbd0f7;
+    font-weight: bold; }
+  .tempSystem .temp {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid #154eb7;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.2rem;
+    height: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    width: 45px; }
+    .tempSystem .temp:hover {
+      background-color: #bbd0f7;
+      border-radius: 3px; }
+
+main {
+  color: black;
+  height: 30%;
+  margin: auto;
+  width: 40%;
+  font-size: 3rem; }
+  main .cityName {
+    font-size: 100%;
+    letter-spacing: 0.1rem;
+    text-align: center; }
+  main .iconAndTemperature {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: Arial;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 30px 0 30px 0; }
+    main .iconAndTemperature .weatherPic img {
+      margin: -60px -20px -60px 0;
+      width: 200px; }
+    main .iconAndTemperature .currentTemperature {
+      font-size: 150%;
+      margin: 0 30px 0 20px; }
+  main .currentDescription {
+    font-size: 80%;
+    margin: 30px 0 10px 0;
+    text-align: center; }
+  main .timeUpdated {
+    font-size: 30%;
+    font-style: italic;
+    text-align: center;
+    margin-top: 30px; }
+  main .currentWeatherDetails {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 45%;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    text-align: center; }
+
+.forecastContainer {
+  width: 100%;
+  margin: 100px 0 100px 0; }
+  .forecastContainer .forecastGroup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 auto 0 auto;
+    width: 70%; }
+    .forecastContainer .forecastGroup .forecastDay {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      border: 1px solid white;
+      border-radius: 4px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      font-size: 1rem;
+      height: 25vh;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -ms-flex-line-pack: distribute;
+      align-content: space-around;
+      padding: 10px;
+      width: 20%; }
+      .forecastContainer .forecastGroup .forecastDay .forecastItem {
+        margin-bottom: 7px; }
+
+.forecastDay h2 {
+  text-decoration: underline; }
+
+.forecastDescriptionText {
+  font-size: 110%;
+  font-style: italic;
+  text-align: center; }
+
+.forecastIcon img {
+  height: 100px;
+  margin: -20px 0 -30px 0; }
+
+.forecastTemperature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 150%;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  width: 80%; }
+
+.forecastWindRain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 90%; }
+  .forecastWindRain img {
+    width: 40px; }
+  .forecastWindRain .wind, .forecastWindRain .rain {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+.forecastDetail {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  height: 100%;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -ms-flex-line-pack: justify;
+  align-content: space-between; }
+  .forecastDetail h3 {
+    text-decoration: underline; }
+  .forecastDetail img {
+    margin: -5px; }
+  .forecastDetail .forecastDetailQuad {
+    height: 40%;
+    font-size: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    width: 40%; }
+    .forecastDetail .forecastDetailQuad .forecastDetailTime {
+      font-size: 80%; }
+    .forecastDetail .forecastDetailQuad .forecastDetailTemp {
+      font-size: 100%; }
+
+#forecastDay1 {
+  position: relative; }
+
+#redButton {
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 20px;
+  left: -10px;
+  outline: none;
+  position: absolute;
+  top: -10px;
+  width: 20px; }
+
+footer {
+  background-color: #6494ed;
+  border-top: 1px solid #154eb7;
+  bottom: 0;
+  height: 50px;
+  font-size: 1rem;
+  line-height: 50px;
+  position: fixed;
+  text-align: center;
+  width: 100%; }
+
+@media (orientation: landscape) and (max-width: 1600px) {
+  main {
+    font-size: 4rem; }
+    main .iconAndTemperature {
+      margin: 15px 0 0 0; }
+      main .iconAndTemperature .weatherPic img {
+        margin: -30px;
+        margin-bottom: -60px;
+        width: 150px; }
+    main .timeUpdated {
+      margin-bottom: 20px; }
+  .forecastContainer .forecastGroup .forecastDay {
+    font-size: 1.5rem; } }
+
+@media (orientation: landscape) and (max-width: 900px) {
+  header {
+    margin-bottom: 20px; }
+  .tempSystem .temp {
+    font-size: 2rem; }
+  main {
+    height: 30%;
+    width: 70%;
+    font-size: 3rem; }
+    main .cityName {
+      font-size: 100%;
+      letter-spacing: 0.1rem; }
+    main .iconAndTemperature {
+      margin: 30px 0 30px 0; }
+      main .iconAndTemperature .weatherPic img {
+        width: 130px; }
+      main .iconAndTemperature .currentTemperature {
+        font-size: 150%;
+        margin: 0 30px 0 20px; }
+    main .currentDescription {
+      font-size: 80%;
+      margin: 20px 0 10px 0; }
+    main .timeUpdated {
+      font-size: 30%;
+      margin-top: 10px; }
+    main .currentWeatherDetails {
+      font-size: 65%; }
+  .forecastContainer {
+    margin-top: 40px; }
+    .forecastContainer .forecastGroup {
+      width: 80%; }
+      .forecastContainer .forecastGroup .forecastDay {
+        height: 40vh;
+        width: 18%; }
+        .forecastContainer .forecastGroup .forecastDay .forecastItem {
+          margin-bottom: 7px; }
+  .forecastIcon img {
+    height: 60px;
+    margin: -15px 0 -22px 0; }
+  .forecastWindRain img {
+    width: 10px; }
+  .forecastDetail img {
+    margin: -10px; }
+  footer {
+    height: 25px;
+    line-height: 25px; } }
+
+@media (orientation: portrait) {
+  header {
+    margin-bottom: 40px; }
+    header form {
+      margin-right: 50px; }
+      header form input {
+        font-size: 2rem; }
+  .forecastIcon img {
+    height: 50px;
+    margin: -10px 0 -15px 0; }
+  .tempSystem {
+    margin-left: 50px;
+    width: 118px; }
+    .tempSystem .temp {
+      font-size: 2rem;
+      height: 30px;
+      width: 50px; }
+  main {
+    width: 80%;
+    font-size: 5rem; }
+    main .iconAndTemperature .weatherPic img {
+      margin: -30px;
+      width: 100px; }
+    main .currentDescription {
+      margin: 10px; }
+    main .timeUpdated {
+      font-size: 1.5rem; }
+  .forecastContainer {
+    margin-top: 5%; }
+    .forecastContainer .forecastGroup {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      height: 45vh;
+      width: 90%; }
+      .forecastContainer .forecastGroup .forecastDay {
+        width: 30%;
+        height: 40%;
+        font-size: 2rem;
+        margin: 20px; } }
+
+@media (orientation: portrait) and (max-width: 500px) {
+  header {
+    margin-bottom: 20px; }
+    header form {
+      margin-right: 10px; }
+      header form input {
+        font-size: 3rem;
+        width: 100px; }
+  .tempSystem {
+    width: 114px;
+    margin-left: 10px; }
+    .tempSystem .temp {
+      font-size: 3rem; }
+  main {
+    width: 90%;
+    font-size: 5rem; }
+    main .iconAndTemperature {
+      margin: 15px 0; }
+      main .iconAndTemperature .weatherPic img {
+        margin: -30px;
+        width: 100px; }
+    main .currentDescription {
+      margin: 0; }
+    main .timeUpdated {
+      font-size: 1.5rem;
+      margin-top: 10px; }
+    main .currentWeatherDetails {
+      margin-top: 15px; }
+  .forecastContainer .forecastGroup .forecastDay {
+    font-size: 1.5rem;
+    margin: 10px;
+    padding: 5px;
+    width: 35%; }
+    .forecastContainer .forecastGroup .forecastDay .forecastDescriptionText {
+      margin: 5px 0 -5px 0; }
+    .forecastContainer .forecastGroup .forecastDay .wind img, .forecastContainer .forecastGroup .forecastDay .rain img {
+      width: 60%; }
+  .forecastDetail img {
+    width: 75%; }
+  footer {
+    height: 25px;
+    line-height: 25px; } }
